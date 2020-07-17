@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b97ea03a-d7c7-4198-9d70-d13c7e0885b8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PascalTriangleII119.java" beforeDir="false" afterPath="$PROJECT_DIR$/PascalTriangleII119.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="hiddenUrls">
+      <set>
+        <option value="https://github.com/kqiu10/LeetcodeJava.git" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eph9N0cn4jrHHwgFakhpNlrxYw" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager">
+    <configuration name="PascalTriangleII119" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PascalTriangleII119" />
+      <module name="LeetcodeJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.PascalTriangleII119" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b97ea03a-d7c7-4198-9d70-d13c7e0885b8" name="Default Changelist" comment="" />
+      <created>1595024289357</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595024289357</updated>
+      <workItem from="1595024291088" duration="2105000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom" timestamp="1595026272928">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656484" />
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272928" />
+    <state width="1638" height="364" key="GridCell.Tab.0.center" timestamp="1595026272925">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.center/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656482" />
+    <state width="1638" height="364" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272925" />
+    <state width="1638" height="364" key="GridCell.Tab.0.left" timestamp="1595026272924">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.left/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656482" />
+    <state width="1638" height="364" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272924" />
+    <state width="1638" height="364" key="GridCell.Tab.0.right" timestamp="1595026272927">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.0.right/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656483" />
+    <state width="1638" height="364" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272927" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1595026272810">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656340" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272810" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1595026272808">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.center/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656339" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272808" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1595026272808">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.left/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656338" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272808" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1595026272809">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state width="1638" height="364" key="GridCell.Tab.1.right/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595025656340" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026272809" />
+    <state x="382" y="261" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1595026049889">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="382" y="261" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595026049889" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" log-message="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PascalTriangleII119.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PascalTriangle118.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
