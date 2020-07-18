@@ -46,4 +46,9 @@ public interface IMylist {
      */
     int remove(int index);
     void removeElement(int element);
+
+    /**
+     * print
+     */
+    void print();
 }

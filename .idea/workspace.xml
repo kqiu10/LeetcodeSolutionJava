@@ -33,6 +33,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Kotlin File" />
         <option value="Class" />
       </list>
     </option>
@@ -59,6 +60,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -66,7 +68,20 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="src.mylist.Main" />
+      <module name="LeetcodeJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="src.mylist.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="PascalTriangleII119" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PascalTriangleII119" />
       <module name="LeetcodeJava" />
@@ -76,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.PascalTriangleII119" />
       </list>
     </recent_temporary>
@@ -91,7 +107,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595030339270</updated>
       <workItem from="1595030344543" duration="1114000" />
-      <workItem from="1595040260714" duration="3605000" />
+      <workItem from="1595040260714" duration="5560000" />
     </task>
     <servers />
   </component>
@@ -111,26 +127,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1595094209754">
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1595096335138">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595094209754" />
-    <state width="1638" height="238" key="GridCell.Tab.0.bottom" timestamp="1595040237664">
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595096335138" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595097019462">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="238" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237664" />
-    <state width="1638" height="238" key="GridCell.Tab.0.center" timestamp="1595040237663">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595097019462" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595097019460">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="238" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237663" />
-    <state width="1638" height="238" key="GridCell.Tab.0.left" timestamp="1595040237662">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595097019460" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595097019459">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="238" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237662" />
-    <state width="1638" height="238" key="GridCell.Tab.0.right" timestamp="1595040237663">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595097019459" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595097019461">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="238" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237663" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595097019461" />
     <state width="1638" height="238" key="GridCell.Tab.1.bottom" timestamp="1595040237666">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -147,5 +163,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="238" key="GridCell.Tab.1.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237666" />
+    <state x="341" y="164" key="SettingsEditor" timestamp="1595095457261">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="341" y="164" key="SettingsEditor/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595095457261" />
   </component>
 </project>

@@ -4,6 +4,10 @@ public class ArrayList  implements  IMylist{
     private  int[] data;
     private int size;
 
+    public ArrayList() {
+        this(10);
+    }
+
     public ArrayList(int capacity) {
         this.data = new int[capacity];
         this.size = 0;
@@ -43,11 +47,11 @@ public class ArrayList  implements  IMylist{
         if (index < 0 || index >= this.size) {
             throw new IllegalArgumentException("index wrong");
         }
-        for (int i = this.size -1; i>= this.size; i--) {
+        for (int i = this.size -1; i>= index; i--) {
             data[i+1] = data[i];
-            data[index] = element;
-            size++;
         }
+        data[index] = element;
+        size++;
     }
 
     @Override
@@ -84,8 +88,8 @@ public class ArrayList  implements  IMylist{
             throw new IllegalArgumentException("index exceed");
         }
         int temp = data[idx];
-        for (int i = size-1; i > idx; i--) {
-            data[i-1] = data[i];
+        for (int i = idx; i < size-1; i++) {
+            data[i] = data[i+1];
         }
         size--;
         return temp;
@@ -93,16 +97,28 @@ public class ArrayList  implements  IMylist{
 
     @Override
     public void removeElement(int element) {
+        int temp = -1;
         for (int i = 0; i < size; i++) {
            if (data[i] == element) {
-               int temp = data[i];
+               temp = data[i];
                for (int j = i+1; j < size; j++) {
                    data[j-1] = data[j];
                }
                size--;
-               return temp;
            }
         }
-        throw new IllegalArgumentException("element not exist");
+        if(temp == -1) {
+            throw new IllegalArgumentException("element not exist");
+        }
+    }
+
+    @Override
+    public void print() {
+        System.out.println("size is " + size);
+        System.out.println("capacity is " + data.length);
+        for (int i = 0; i < size; i++) {
+            System.out.print(data[i] + " ");
+
+        }
     }
 }
