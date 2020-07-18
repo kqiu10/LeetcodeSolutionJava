@@ -20,10 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f8d20d-c824-4469-a478-d86d722f1fa8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PascalTriangleII119.java" beforeDir="false" afterPath="$PROJECT_DIR$/PascalTriangleII119.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetcodeJava/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetcodeJava/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mylist/ArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mylist/IMylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mylist/IMylist.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +91,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595030339270</updated>
       <workItem from="1595030344543" duration="1114000" />
-      <workItem from="1595040260714" duration="1796000" />
+      <workItem from="1595040260714" duration="3605000" />
     </task>
     <servers />
   </component>
@@ -112,10 +111,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1595041003780">
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1595094209754">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595041003780" />
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595094209754" />
     <state width="1638" height="238" key="GridCell.Tab.0.bottom" timestamp="1595040237664">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
