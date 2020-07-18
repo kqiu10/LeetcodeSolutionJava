@@ -13,6 +13,7 @@ public class PascalTriangleII119 {
         return list;
     }
     public static void main(String[] args){
+
         System.out.println(getRow(5));
     }
 
