@@ -56,6 +56,17 @@ public class StableSort {
             }
         }
     }
+    public static void bubbleSortWithComparator(Product[] products) {
+        for (int i = 0; i < products.length - 1; i++) {
+            for (int j = products.length - 1; j >i; j--) {
+                if (products[j].compareTo(products[j-1]) < 0) {
+                    Product temp = products[j];
+                    products[j] = products[j-1];
+                    products[j-1] = temp;
+                }
+            }
+        }
+    }
 
         public static void main(String[] args) {
             Product product1 = new Product(3,10);
@@ -63,8 +74,8 @@ public class StableSort {
             Product product3 = new Product(0,9);
             Product product4 = new Product(2,9);
             Product[] products = new Product[]{product1, product2, product3, product4};
-//           bubbleSort(products);
-           bubbleSortUnStable(products);
+           bubbleSort(products);
+//           bubbleSortUnStable(products);
             for (Product product : products) {
                 System.out.println(product.toString());
 

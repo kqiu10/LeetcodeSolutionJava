@@ -7,13 +7,15 @@ package sortAlgorithm;
  * Date: 7/18/20
  */
 
+import java.util.Comparator;
+
 /**
  * Best Time complexity: O();
  * Worst Time complexity: O();
  * Average Time complexity:O();
  * Space complexity: O();
  */
-public class Product {
+public class Product implements Comparable<Product>{
     private int prize;
     private int sale;
 
@@ -44,5 +46,20 @@ public class Product {
                 "prize=" + prize +
                 ", sale=" + sale +
                 '}';
+    }
+
+    @Override
+    public int compareTo(Product o) {
+       if (this.getSale() == o.getSale()) {
+           return this.getPrize() - o.getPrize();
+       } else {
+           return this.getSale() - this.getSale();
+       }
+    }
+}
+class ProductCompare implements Comparator<Product> {
+    @Override
+    public int compare(Product o1, Product o2) {
+        return o1.getSale() - o2.getSale();
     }
 }
