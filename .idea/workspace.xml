@@ -21,14 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2f8d20d-c824-4469-a478-d86d722f1fa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetcodeJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetcodeJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PascalTriangle118.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/PascalTriangleII119.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoveElement27.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetcodeJava/LeetcodeJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetcodeJava/LeetcodeJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortAlgorithm/BableSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sortAlgorithm/BubbleSort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortAlgorithm/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/sortAlgorithm/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortAlgorithm/StableSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sortAlgorithm/StableSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,10 +69,29 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.SelectSort">
-    <configuration name="PascalTriangleII119" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="leetcode.PascalTriangleII119" />
+  <component name="RunManager" selected="Application.InsertSort">
+    <configuration name="BubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortAlgorithm.BubbleSort" />
       <module name="LeetcodeJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sortAlgorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InsertSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortAlgorithm.InsertSort" />
+      <module name="LeetcodeJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sortAlgorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -118,26 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StableSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="sortAlgorithm.StableSort" />
-      <module name="LeetcodeJava" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="sortAlgorithm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.InsertSort" />
+        <item itemvalue="Application.BubbleSort" />
         <item itemvalue="Application.SelectSort" />
         <item itemvalue="Application.RemoveElement27 (1)" />
         <item itemvalue="Application.RemoveElement27" />
-        <item itemvalue="Application.PascalTriangleII119" />
-        <item itemvalue="Application.StableSort" />
       </list>
     </recent_temporary>
   </component>
@@ -152,7 +150,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595030339270</updated>
       <workItem from="1595030344543" duration="1114000" />
-      <workItem from="1595040260714" duration="17158000" />
+      <workItem from="1595040260714" duration="19586000" />
     </task>
     <servers />
   </component>
@@ -180,22 +178,26 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595129922279" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595177601890">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595184861256">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595177601890" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595177601888">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595184026533" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595184861256" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595184861254">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595177601888" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595177601887">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595184026531" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595184861254" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595184861254">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595177601887" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595177601889">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595184026531" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595184861254" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595184861255">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595177601889" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1057.1920.1057/0.0.1680.1050@0.0.1680.1050" timestamp="1595184026532" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595184861255" />
     <state width="1638" height="238" key="GridCell.Tab.1.bottom" timestamp="1595130485873">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
