@@ -5,6 +5,7 @@
  * Creator: Kane;
  * Date: 7/18/20
  */
+package leetcode;
 public class RemoveElement27 {
     public static int removeElement(int[] nums, int val) {
         if (nums == null || nums.length == 0) {

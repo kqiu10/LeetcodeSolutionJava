@@ -53,7 +53,7 @@ public class Product implements Comparable<Product>{
        if (this.getSale() == o.getSale()) {
            return this.getPrize() - o.getPrize();
        } else {
-           return this.getSale() - this.getSale();
+           return this.getSale() - o.getSale();
        }
     }
 }

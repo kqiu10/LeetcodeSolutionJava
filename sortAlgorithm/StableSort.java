@@ -74,8 +74,9 @@ public class StableSort {
             Product product3 = new Product(0,9);
             Product product4 = new Product(2,9);
             Product[] products = new Product[]{product1, product2, product3, product4};
-           bubbleSort(products);
+//           bubbleSort(products);
 //           bubbleSortUnStable(products);
+            bubbleSortWithComparator(products);
             for (Product product : products) {
                 System.out.println(product.toString());
 

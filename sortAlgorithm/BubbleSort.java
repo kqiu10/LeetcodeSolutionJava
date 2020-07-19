@@ -9,7 +9,7 @@ import java.util.Arrays;
  * Creator: Kane;
  * Date: 7/18/20
  */
-public class BableSort {
+public class BubbleSort {
     public static void bubbleSort(int[] nums) {
         for (int i = 0; i < nums.length - 1; i++) {
             System.out.println((i+1) + " round " + "array is " + Arrays.toString(nums));
