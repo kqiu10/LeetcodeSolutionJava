@@ -51,4 +51,9 @@ public interface IMylist {
      * print
      */
     void print();
+
+    /**
+     * lazy reisez;
+     */
+    void resize(int capacity);
 }

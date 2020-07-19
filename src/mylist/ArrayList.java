@@ -32,7 +32,7 @@ public class ArrayList  implements  IMylist{
     @Override
     public void add(int ele) {
         if (this.size == this.data.length){
-            throw new IllegalArgumentException("list is full");
+            resize(data.length *2);
         }
         this.data[this.size] = ele;
         this.size++;
@@ -42,7 +42,7 @@ public class ArrayList  implements  IMylist{
     @Override
     public void add(int index, int element) {
         if (this.size == this.data.length){
-            throw new IllegalArgumentException("list is full");
+            resize(data.length *2);
         }
         if (index < 0 || index >= this.size) {
             throw new IllegalArgumentException("index wrong");
@@ -92,6 +92,9 @@ public class ArrayList  implements  IMylist{
             data[i] = data[i+1];
         }
         size--;
+        if (data.length / 4 == size && data.length / 2 != 0){
+            resize(data.length / 2 );
+        }
         return temp;
     }
 
@@ -121,4 +124,15 @@ public class ArrayList  implements  IMylist{
 
         }
     }
+
+    @Override
+    public void resize(int capacity) {
+        int[] newArrayList = new int[capacity];
+        for (int i = 0; i < size; i++) {
+            newArrayList[i] = data[i];
+        }
+        data = newArrayList;
+    }
+
+
 }
