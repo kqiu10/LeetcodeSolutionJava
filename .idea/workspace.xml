@@ -21,10 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f2f8d20d-c824-4469-a478-d86d722f1fa8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PascalTriangleII119.java" beforeDir="false" afterPath="$PROJECT_DIR$/PascalTriangleII119.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mylist/ArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mylist/ArrayList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mylist/IMylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mylist/IMylist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mylist/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mylist/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +66,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.RemoveElement27">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="src.mylist.Main" />
       <module name="LeetcodeJava" />
@@ -91,8 +87,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RemoveElement27" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="RemoveElement27" />
+      <module name="LeetcodeJava" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.RemoveElement27" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.PascalTriangleII119" />
       </list>
@@ -109,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595030339270</updated>
       <workItem from="1595030344543" duration="1114000" />
-      <workItem from="1595040260714" duration="9766000" />
+      <workItem from="1595040260714" duration="10315000" />
     </task>
     <servers />
   </component>
@@ -133,22 +137,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595114094577" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595114209279">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595119561575">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595114209279" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595114209277">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595119561575" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595119561574">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595114209277" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595114209276">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595119561574" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595119561574">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595114209276" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595114209278">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595119561574" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595119561575">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595114209278" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595119561575" />
     <state width="1638" height="238" key="GridCell.Tab.1.bottom" timestamp="1595040237666">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -165,10 +169,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="238" key="GridCell.Tab.1.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237666" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1595095457261">
+    <state x="341" y="164" key="SettingsEditor" timestamp="1595119237072">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595095457261" />
+    <state x="341" y="164" key="SettingsEditor/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595119237072" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1595115402013">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
