@@ -58,10 +58,11 @@ public class InsertSort {
             }
             for (int j = i; j > high; j--) {
                 nums[j+1] = nums[j];
-
+                System.out.println((i+1) + " round " + "步骤 " + Arrays.toString(nums));
+                System.out.println("high bound is " + high);
             }
             nums[high + 1] = temp;
-            System.out.println((i+1) + " round " + "步骤 " + Arrays.toString(nums));
+
         }
     }
 
