@@ -66,7 +66,7 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BableSort">
+  <component name="RunManager" selected="Application.StableSort">
     <configuration name="BableSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="sortAlgorithm.BableSort" />
       <module name="LeetcodeJava" />
@@ -107,12 +107,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StableSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sortAlgorithm.StableSort" />
+      <module name="LeetcodeJava" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sortAlgorithm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StableSort" />
+        <item itemvalue="Application.PascalTriangleII119" />
         <item itemvalue="Application.BableSort" />
         <item itemvalue="Application.RemoveElement27" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.PascalTriangleII119" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595030339270</updated>
       <workItem from="1595030344543" duration="1114000" />
-      <workItem from="1595040260714" duration="11739000" />
+      <workItem from="1595040260714" duration="13405000" />
     </task>
     <servers />
   </component>
@@ -147,26 +161,26 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1595114094577">
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1595128107840">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595114094577" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595123404397">
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595128107840" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1595125478652">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595123404397" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595123404396">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595125478652" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1595125478650">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595123404396" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595123404394">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595125478650" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1595125478649">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595123404394" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595123404396">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595125478649" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1595125478651">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595123404396" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595125478651" />
     <state width="1638" height="238" key="GridCell.Tab.1.bottom" timestamp="1595040237666">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -183,10 +197,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1638" height="238" key="GridCell.Tab.1.right/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595040237666" />
-    <state x="341" y="164" key="SettingsEditor" timestamp="1595119237072">
+    <state x="341" y="164" key="SettingsEditor" timestamp="1595124248865">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="164" key="SettingsEditor/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595119237072" />
+    <state x="341" y="164" key="SettingsEditor/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1595124248865" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1595115402013">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
