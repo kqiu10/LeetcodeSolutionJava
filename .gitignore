@@ -8,3 +8,5 @@ out/
 /.idea/
 /src/mylist/
 /sortAlgorithm/
+!/sortAlgorithm/
+!/src/mylist/
