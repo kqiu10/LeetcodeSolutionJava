@@ -1,4 +1,4 @@
-package leetcode.位运算;
+package leetcode.BitWise;
 /**
  * Description: 任何数异或0等于其本身;
  * Package Name : leetcode;
@@ -6,8 +6,6 @@ package leetcode.位运算;
  * Creator: Kane;
  * Date: 7/20/20
  */
-
-import java.util.Arrays;
 
 /**
  * Time complexity:O(n);
