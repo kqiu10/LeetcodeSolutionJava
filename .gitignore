@@ -5,6 +5,6 @@ out/
 * Template - Algorithm Study Log.xlsx;
 *.class
 * .src
-!/.idea/
-!/src/mylist/
-!/sortAlgorithm/
+/.idea/
+/src/mylist/
+/sortAlgorithm/
