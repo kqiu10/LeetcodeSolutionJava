@@ -15,7 +15,7 @@ import java.util.Arrays;
  * Average Time complexity:O();
  * Space complexity: O();
  */
-public class StableSort {
+public class BubbleStableSort {
         public static void bubbleSort(Product[] products) {
             for (int i = 0; i < products.length - 1; i++) {
                 for (int j = products.length - 1; j >i; j--) {
