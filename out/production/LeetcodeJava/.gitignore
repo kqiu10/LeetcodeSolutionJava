@@ -1,5 +1,12 @@
+out/
+
 * .idea;
 * array.xlsx;
 * Template - Algorithm Study Log.xlsx;
 *.class
 * .src
+/.idea/
+/src/mylist/
+/sortAlgorithm/
+!/sortAlgorithm/
+!/src/mylist/
