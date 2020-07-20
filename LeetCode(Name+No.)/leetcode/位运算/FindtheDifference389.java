@@ -1,6 +1,6 @@
-package leetcode;
+package leetcode.位运算;
 /**
- * Description: 相同字符异或后为0，不同为1，a^b^b = a, 且异或有交换律，所以让s与t中所有字符异或一遍就去除了出现偶数遍的字符，只留下了只出现奇数次的字符
+ * Description: 相同字符异或后为0，不同为1，a^b^b = a, 且异或有交换律，所以让s与t中所有字符异或一遍就去除了出现偶数遍的字符，只留下了只出现奇数次的字符;
  * Package Name : leetcode;
  * File name : FindtheDifference389;
  * Creator: Kane;
