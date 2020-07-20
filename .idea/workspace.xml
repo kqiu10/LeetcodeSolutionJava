@@ -20,16 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f2f8d20d-c824-4469-a478-d86d722f1fa8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/IncreasingTripletSubsequence334.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/IncreasingTripletSubsequence334.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/LongestIncreasingSubsequence300.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/LongestIncreasingSubsequence300.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/MergeSortedArray88.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/MergeSortedArray88.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/PascalTriangle118.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/PascalTriangle118.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/PascalTriangleII119.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/PascalTriangleII119.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/RemoveElement27.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/RemoveElement27.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/1-900/leetcode/moveZeros283.java" beforeDir="false" afterPath="$PROJECT_DIR$/LeetCode(Name+No.)/leetcode/moveZeros283.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeetcodeJava.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LeetcodeJava.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sortAlgorithm/StableSort.java" beforeDir="false" afterPath="$PROJECT_DIR$/sortAlgorithm/BubbleStableSort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595030339270</updated>
       <workItem from="1595030344543" duration="1114000" />
-      <workItem from="1595040260714" duration="28136000" />
+      <workItem from="1595040260714" duration="28752000" />
     </task>
     <servers />
   </component>
