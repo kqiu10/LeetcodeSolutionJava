@@ -29,4 +29,11 @@ public class FindtheDifference389 {
         String t = "ecadb";
         System.out.println(findTheDifference(s,t));
     }
+
+    /**
+     * Time complexity:O();
+     * Space complexity: O();
+     */
+    public static class PowerOfTwo {
+    }
 }
