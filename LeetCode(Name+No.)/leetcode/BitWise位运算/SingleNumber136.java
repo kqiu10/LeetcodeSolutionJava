@@ -1,4 +1,4 @@
-package leetcode.BitWise;
+package leetcode.BitWise位运算;
 /**
  * Description: 任何数异或0等于其本身;
  * Package Name : leetcode;

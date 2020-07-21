@@ -1,4 +1,4 @@
-package leetcode.BitWise;
+package leetcode.BitWise位运算;
 /**
  * Description: TODO
  * Package Name : leetcode.位运算;

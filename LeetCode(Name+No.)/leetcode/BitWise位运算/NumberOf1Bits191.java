@@ -1,4 +1,4 @@
-package leetcode.BitWise;
+package leetcode.BitWise位运算;
 /**
  * Description: n & (n-1) 作用： 将n的二进制表示中最低位为1的改为0；
  * Package Name : leetcode.位运算;

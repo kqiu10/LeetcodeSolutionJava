@@ -1,4 +1,4 @@
-package leetcode.BitWise;
+package leetcode.BitWise位运算;
 /**
  * Description: TODO
  * Package Name : leetcode.BitWise;
@@ -6,8 +6,6 @@ package leetcode.BitWise;
  * Creator: Kane;
  * Date: 7/20/20
  */
-
-import java.util.LinkedList;
 
 /**
  * Time complexity:O(n^2);
