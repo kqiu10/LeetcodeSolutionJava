@@ -8,8 +8,48 @@ package leetcode.Mathmatics数学题;
  */
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(n);
  */
 public class Base7504 {
+    /**
+     * method : iteration;
+     * @param num
+     * @return
+     */
+    public String convertToBase7(int num) {
+        if (num == 0) {
+            return "0";
+        }
+        StringBuilder sb = new StringBuilder();
+        boolean negative = false;
+        if (num < 0) {
+            negative = true;
+        }
+        while (num != 0) {
+            sb.append(Math.abs(num % 7));
+            num = num / 7;
+        }
+        if (negative == true) {
+            sb.append('-');
+        }
+        return sb.reverse().toString();
+    }
+    /**
+     * recursion
+     */
+    public static String convertToBase7II(int num) {
+        if (num < 0) {
+            return '-' + convertToBase7II(-num);
+        }
+        if (num < 7) {
+            return num + "";
+        }
+        return convertToBase7II(num / 7) + num % 7;
+    }
+
+    public static void main(String[] args) {
+        convertToBase7II(12);
+        System.out.println(convertToBase7II(12));
+    }
 }
