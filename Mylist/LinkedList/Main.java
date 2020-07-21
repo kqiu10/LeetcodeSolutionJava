@@ -7,6 +7,9 @@ package Mylist.LinkedList;
  * Date: 7/20/20
  */
 
+import Mylist.ArrayList.ArrayListImpl;
+import Mylist.ArrayList.IArraylist;
+import Mylist.IMyList;
 import Mylist.LinkedList.impL.LinkedListImpl;
 
 /**
@@ -24,5 +27,11 @@ public class Main {
         linkedList.print();
         linkedList.remove(0);
         linkedList.print();
+
+        IMyList<Integer> list1 = new ArrayListImpl<>();
+        IMyList<Integer> list2 = new LinkedListImpl<>();
+        ILinkedList<Integer> list3 = new LinkedListImpl<>();
+        IArraylist<Integer> list4 = new ArrayListImpl<>();
+
     }
 }
