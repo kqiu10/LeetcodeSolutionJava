@@ -1,7 +1,7 @@
-package src.mylist;
+package Mylist.ArrayList;
 
-public class ArrayList  implements  IMylist{
-    private  int[] data;
+public class ArrayList<E>  implements  IMylist<E>{
+    private  E[] data;
     private int size;
 
     public ArrayList() {
@@ -9,7 +9,7 @@ public class ArrayList  implements  IMylist{
     }
 
     public ArrayList(int capacity) {
-        this.data = new int[capacity];
+        this.data = (E[]) new Object[capacity];
         this.size = 0;
 
     }
@@ -30,17 +30,17 @@ public class ArrayList  implements  IMylist{
     }
 
     @Override
-    public void add(int ele) {
+    public void add(E ele) {
         if (this.size == this.data.length){
             resize(data.length *2);
         }
-        this.data[this.size] = ele;
+        this.data[this.size].equals(ele);
         this.size++;
 
     }
 
     @Override
-    public void add(int index, int element) {
+    public void add(int index, E element) {
         if (this.size == this.data.length){
             resize(data.length *2);
         }
@@ -50,14 +50,14 @@ public class ArrayList  implements  IMylist{
         for (int i = this.size -1; i>= index; i--) {
             data[i+1] = data[i];
         }
-        data[index] = element;
+        data[index].equals(element);
         size++;
     }
 
     @Override
-    public boolean contains(int element) {
+    public boolean contains(E element) {
         for (int i = 0; i <size; i++) {
-            if(data[i] == element) {
+            if(data[i].equals(element)) {
                 return true;
             }
 
@@ -66,16 +66,16 @@ public class ArrayList  implements  IMylist{
     }
 
     @Override
-    public void set(int idx, int ele) {
+    public void set(int idx, E ele) {
         if (idx <0 || idx >= size) {
            throw new IllegalArgumentException("index exceed");
         }
-        data[idx] = ele;
+        data[idx].equals(ele);
 
     }
 
     @Override
-    public int get(int idx) {
+    public E get(int idx) {
         if (idx <0 || idx >= size) {
             throw new IllegalArgumentException("index exceed");
         }
@@ -83,11 +83,11 @@ public class ArrayList  implements  IMylist{
     }
 
     @Override
-    public int remove(int idx) {
+    public E remove(int idx) {
         if(idx <0 || idx >= size) {
             throw new IllegalArgumentException("index exceed");
         }
-        int temp = data[idx];
+        E temp = data[idx];
         for (int i = idx; i < size-1; i++) {
             data[i] = data[i+1];
         }
@@ -99,20 +99,18 @@ public class ArrayList  implements  IMylist{
     }
 
     @Override
-    public void removeElement(int element) {
-        int temp = -1;
+    public void remove(E element) {
+        int index = -1;
         for (int i = 0; i < size; i++) {
-           if (data[i] == element) {
-               temp = data[i];
-               for (int j = i+1; j < size; j++) {
-                   data[j-1] = data[j];
-               }
-               size--;
-           }
+            if (data[i] == element) {
+                index = i;
+            }
         }
-        if(temp == -1) {
+
+        if(index == -1) {
             throw new IllegalArgumentException("element not exist");
         }
+        remove(index);
     }
 
     @Override
@@ -127,7 +125,7 @@ public class ArrayList  implements  IMylist{
 
     @Override
     public void resize(int capacity) {
-        int[] newArrayList = new int[capacity];
+        E[] newArrayList = (E[]) new Object[capacity];
         for (int i = 0; i < size; i++) {
             newArrayList[i] = data[i];
         }

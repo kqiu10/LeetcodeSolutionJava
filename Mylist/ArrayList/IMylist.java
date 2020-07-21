@@ -1,6 +1,6 @@
-package src.mylist;
+package Mylist.ArrayList;
 
-public interface IMylist {
+public interface IMylist<E> {
     /**
      * capacity
      */
@@ -19,33 +19,34 @@ public interface IMylist {
     /**
      * add to tail
      */
-    void add(int ele);
+    void add(E ele);
 
     /**
      * add anywhere
      */
-    void add(int index, int element);
+    void add(int index, E element);
 
     /**
      * find
      */
-    boolean contains(int ele);
+    boolean contains(E ele);
 
     /**
      * set
      */
-    void set(int idx, int ele);
+    void set(int idx, E ele);
 
     /**
      * get
      */
-    int get(int index);
+    E get(int index);
 
     /**
      * delete
      */
-    int remove(int index);
-    void removeElement(int element);
+    E remove(int index);
+
+    void remove(E element);
 
     /**
      * print

@@ -6,7 +6,7 @@ out/
 *.class
 * .src
 /.idea/
-/src/mylist/
+/Mylist/
 /sortAlgorithm/
 !/sortAlgorithm/
-!/src/mylist/
+!/Mylist/

@@ -1,4 +1,4 @@
-package src.mylist;
+package Mylist.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
