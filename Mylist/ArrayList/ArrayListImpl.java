@@ -1,14 +1,16 @@
 package Mylist.ArrayList;
 
-public class ArrayList<E>  implements  IMylist<E>{
+import Mylist.IMyList;
+
+public class ArrayListImpl<E>  implements IArraylist<E>, IMyList<E> {
     private  E[] data;
     private int size;
 
-    public ArrayList() {
+    public ArrayListImpl() {
         this(10);
     }
 
-    public ArrayList(int capacity) {
+    public ArrayListImpl(int capacity) {
         this.data = (E[]) new Object[capacity];
         this.size = 0;
 
@@ -99,7 +101,7 @@ public class ArrayList<E>  implements  IMylist<E>{
     }
 
     @Override
-    public void remove(E element) {
+    public boolean remove(E element) {
         int index = -1;
         for (int i = 0; i < size; i++) {
             if (data[i] == element) {
@@ -111,6 +113,7 @@ public class ArrayList<E>  implements  IMylist<E>{
             throw new IllegalArgumentException("element not exist");
         }
         remove(index);
+        return true;
     }
 
     @Override

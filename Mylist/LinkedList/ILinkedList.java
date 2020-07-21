@@ -21,7 +21,7 @@ public interface ILinkedList<E> {
     /**
      * add with element
      */
-    boolean add(E element);
+    void add(E element);
 
     /**
      * add at head

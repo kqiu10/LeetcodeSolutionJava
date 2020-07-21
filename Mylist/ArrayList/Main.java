@@ -2,7 +2,7 @@ package Mylist.ArrayList;
 
 public class Main {
     public static void main(String[] args) {
-        ArrayList arraylist = new ArrayList();
+        ArrayListImpl arraylist = new ArrayListImpl();
         for (int i = 0; i < 9; i++) {
             arraylist.add(i);
 

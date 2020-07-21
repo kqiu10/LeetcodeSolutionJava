@@ -1,11 +1,6 @@
-package Mylist.ArrayList;
+package Mylist;
 
-public interface IMylist<E> {
-    /**
-     * capacity
-     */
-    int capacity();
-
+public interface IMyList<E> {
     /**
      * size
      */
@@ -46,15 +41,11 @@ public interface IMylist<E> {
      */
     E remove(int index);
 
-    void remove(E element);
+    boolean remove(E element);
 
     /**
      * print
      */
     void print();
 
-    /**
-     * lazy reisez;
-     */
-    void resize(int capacity);
 }

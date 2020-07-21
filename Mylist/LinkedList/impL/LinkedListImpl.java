@@ -7,13 +7,14 @@ package Mylist.LinkedList.impL;
  * Date: 7/20/20
  */
 
+import Mylist.IMyList;
 import Mylist.LinkedList.ILinkedList;
 
 /**
  * Time complexity:O();
  * Space complexity: O();
  */
-public class LinkedListImpl<E> implements ILinkedList<E> {
+public class LinkedListImpl<E> implements ILinkedList<E>, IMyList<E> {
     private int size;
 
     private ListNode dummy;
@@ -69,9 +70,8 @@ public class LinkedListImpl<E> implements ILinkedList<E> {
     }
 
     @Override
-    public boolean add(E element) {
+    public void add(E element) {
         add(size, element);
-        return true;
     }
     @Override
     public E remove(int index) {
