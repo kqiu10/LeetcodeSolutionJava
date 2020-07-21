@@ -83,4 +83,9 @@ public interface ILinkedList<E> {
      */
     void validateIndex(int index);
 
+    /**
+     * print
+     */
+    void print();
+
 }

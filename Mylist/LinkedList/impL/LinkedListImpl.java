@@ -27,7 +27,7 @@ public class LinkedListImpl<E> implements ILinkedList<E> {
         }
     }
 
-    public LinkedListImpl(int size) {
+    public LinkedListImpl() {
         this.dummy = new ListNode(0);
         this.size = 0;
     }
@@ -172,5 +172,15 @@ public class LinkedListImpl<E> implements ILinkedList<E> {
             cur = cur.next;
         }
         return false;
+    }
+
+    @Override
+    public void print() {
+        ListNode cur = dummy.next;
+        while (cur != null) {
+            System.out.print(cur.data + " -> ");
+            cur = cur.next;
+        }
+        System.out.println("null");
     }
 }
