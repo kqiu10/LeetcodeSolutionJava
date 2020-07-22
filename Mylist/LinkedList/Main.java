@@ -10,7 +10,7 @@ package Mylist.LinkedList;
 import Mylist.ArrayList.ArrayListImpl;
 import Mylist.ArrayList.IArraylist;
 import Mylist.IMyList;
-import Mylist.LinkedList.impL.LinkedListImpl;
+import Mylist.LinkedList.impl.LinkedListImpl;
 
 /**
  * Time complexity:O();

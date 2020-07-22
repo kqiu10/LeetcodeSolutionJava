@@ -1,4 +1,4 @@
-package Mylist.LinkedList.impL;
+package Mylist.LinkedList.impl;
 /**
  * Description: TODO
  * Package Name : Mylist.LinkedList.impL;
