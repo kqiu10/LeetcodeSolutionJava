@@ -60,6 +60,7 @@ public class IArrayStackImp<E> implements Stack.IArrayStack<E> {
         if (elementCount < data.length / 4) {
             resize(data.length / 2);
         }
+        data[elementCount] = null;
         return obj;
     }
 
