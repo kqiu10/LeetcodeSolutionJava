@@ -74,10 +74,10 @@ public class MinStack155 {
     }
 }
 
-class MinStack2 {
+class MinStackII {
     Stack<Integer> stack;
     int min;
-    public MinStack2(){
+    public MinStackII(){
         stack = new Stack<>();
         min = Integer.MAX_VALUE;
     }
