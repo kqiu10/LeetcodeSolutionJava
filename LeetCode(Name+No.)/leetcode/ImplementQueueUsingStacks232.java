@@ -27,11 +27,7 @@ public class ImplementQueueUsingStacks232 {
     /** Push element x to the back of queue. */
     public void push(int x) {
 
-        for (int i = 0; i < queue.size() - 1; i++) {
-             queue.offer(queue.poll());
 
-        }
-        queue.offer(x);
 
     }
 
