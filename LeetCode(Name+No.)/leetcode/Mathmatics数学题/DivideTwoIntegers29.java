@@ -27,7 +27,7 @@ public class DivideTwoIntegers29 {
         }
         long Lres = divide(Ldivided, Ldivisor);
         int res = 0;
-        if (res > Integer.MAX_VALUE) {
+        if (Lres >= Integer.MAX_VALUE) {
             res = (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         } else {
             res = (int)(sign * Lres);
@@ -48,8 +48,7 @@ public class DivideTwoIntegers29 {
     }
 
     public  static void main(String[] args) {
-        System.out.println(divide(1000,2));
-        System.out.println(Integer.MIN_VALUE);
-
+        System.out.println(divide(-2147483648,
+                -1));
     }
 }
