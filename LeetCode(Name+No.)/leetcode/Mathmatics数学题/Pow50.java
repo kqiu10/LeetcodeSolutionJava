@@ -11,8 +11,9 @@ package leetcode.Mathmatics数学题;
  * Ex 5^(-5) = 5^(-2) * 5^(-2) * 5
  *           = (5^(-1) * 5^(-1)) * (5^(-1) * 5^(-1)) * 5
  *           = ((5^0*5^0*5) * (5^0*5^0*5) * 5 ) * ((5^0*5^0*5) * (5^0*5^0*5) * 5 ) * 5
- * Time complexity:O();
- * Space complexity: O();
+ * Recursion
+ * Time complexity:O(logn); //二分法;
+ * Space complexity: O(logn);
  */
 public class Pow50 {
     public static double myPow(double x, int n) {
@@ -35,4 +36,33 @@ public class Pow50 {
     public static void main(String[] args) {
         System.out.println(myPow(5, 5));
     }
+}
+/**
+ * Iteration
+ * Time complexity:O(logn); //二分法;
+ * Space complexity: O(1);
+ */
+
+class PowII{
+    public static double Pow(double x, int n) {
+        if (n == 0) return 1;
+        double res = 1;
+        long abs = Math.abs((long)n);
+        while (abs > 0) {
+            if (abs % 2 != 0) {
+                res *= x;
+            }
+                x *= x;
+                abs /= 2;
+
+        }
+        if (n < 0) {
+            return 1.0 / res;
+        }
+        return res;
+    }
+    public static void main(String[] args) {
+        System.out.println(Pow(5, 5));
+    }
+
 }
