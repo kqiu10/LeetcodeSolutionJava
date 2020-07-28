@@ -7,7 +7,7 @@ package leetcode.Mathmatics数学题;
  */
 
 /**
- * Time complexity:O();
+ * Time complexity:O(n);
  * Space complexity: O(n);
  * Description: TODO
  */
