@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.数组;
 /**
  * Description: TODO
  * Package Name : leetcode;
@@ -8,10 +8,8 @@ package leetcode;
  */
 
 /**
- * Best Time complexity: O();
- * Worst Time complexity: O();
- * Average Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1);
  */
 public class SortColors75 {
     public void sortColors(int[] nums) {
@@ -22,12 +20,12 @@ public class SortColors75 {
         int end = nums.length - 1;
         int index = 0;
         while (index <= end) {
-            if(nums[index] == 0) {
+            if (nums[index] == 0) {
                 swap(nums, index++, start++);
-            } else if(nums[index] == 2) {
+            } else if (nums[index] == 2) {
                 swap(nums, index, end--);
 
-            } else {
+            } else if (nums[index] == 1) {
                 index++;
             }
         }
