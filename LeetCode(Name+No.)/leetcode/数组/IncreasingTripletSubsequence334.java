@@ -8,10 +8,8 @@ package leetcode.数组;
  */
 
 /**
- * Best Time complexity: O();
- * Worst Time complexity: O();
- * Average Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1;
  */
 public class IncreasingTripletSubsequence334 {
     public static boolean increasingTriplet(int[] nums) {
