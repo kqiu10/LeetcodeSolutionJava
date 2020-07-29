@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.数组;
 /**
  * Description: TODO
  * Package Name : leetcode;
@@ -14,7 +14,7 @@ package leetcode;
  * Space complexity: O();
  */
 public class IncreasingTripletSubsequence334 {
-    public boolean increasingTriplet(int[] nums) {
+    public static boolean increasingTriplet(int[] nums) {
         if (nums.length < 3) {
             throw new IndexOutOfBoundsException();
         }
@@ -30,5 +30,9 @@ public class IncreasingTripletSubsequence334 {
         }
         return false;
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println(increasingTriplet(new int[]{1,2,2,1,4}));
     }
 }
