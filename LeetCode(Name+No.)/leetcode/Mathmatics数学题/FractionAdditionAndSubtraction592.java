@@ -14,7 +14,7 @@ import java.util.Scanner;
  * Description: TODO
  */
 public class FractionAdditionAndSubtraction592 {
-    public String fractionAddition(String expression) {
+    public static String fractionAddition(String expression) {
         Scanner sc = new Scanner(expression).useDelimiter("/|(?=[-+])");
         int A = 0, B = 1;
         while(sc.hasNext()) {
@@ -28,8 +28,13 @@ public class FractionAdditionAndSubtraction592 {
         return  A+ "/" + B;
 
     }
-    public int gcd(int a, int b) {
+    public static int gcd(int a, int b) {
         if (a == 0) return Math.abs(b);
         return gcd(b % a, a);
+    }
+
+    public static void main(String[] args) {
+        String st = "1/3-1/2";
+        fractionAddition(st);
     }
 }
