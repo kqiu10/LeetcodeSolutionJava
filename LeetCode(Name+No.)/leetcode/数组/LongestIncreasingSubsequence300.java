@@ -33,7 +33,7 @@ public class LongestIncreasingSubsequence300 {
                     j = mid;
                 }
             }
-            res[i] = num;
+            res[j] = num;
             if (i == size) {
                 size++;
             }
