@@ -45,7 +45,7 @@ public class FindtheDuplicateNumber287 {
  * Description: Lined List Cycle；
  * 代码参考：https://segmentfault.com/a/1190000003817671；
  */
-class MethodII{
+class findDuplicateII{
     public static int findDuplicate(int[] nums) {
         int slow = 0;
         int fast = 0;
