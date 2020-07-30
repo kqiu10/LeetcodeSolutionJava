@@ -8,9 +8,7 @@ package leetcode.数组;
  */
 
 /**
- * Best Time complexity: O();
- * Worst Time complexity: O();
- * Average Time complexity:O();
+ * Time complexity: O();
  * Space complexity: O();
  */
 public class KthLargestElementinanArray215 {
