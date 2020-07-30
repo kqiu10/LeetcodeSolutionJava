@@ -10,6 +10,10 @@ package leetcode.数组;
  * Time complexity:O();
  * Space complexity: O();
  * Description: TODO
+ *
+ * Similar questions
+ * 315. Count of Smaller Numbers After Self
+ * 327. Count of Range Sum
  */
 public class ReversePairs493 {
 }

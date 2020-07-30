@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.数组;
 /**
  * Description: TODO
  * Package Name : leetcode;
