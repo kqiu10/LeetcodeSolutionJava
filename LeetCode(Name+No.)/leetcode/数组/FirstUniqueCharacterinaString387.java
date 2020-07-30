@@ -1,4 +1,4 @@
-package leetcode;
+package leetcode.数组;
 /**
  * Description: TODO
  * Package Name : leetcode;
@@ -10,10 +10,12 @@ package leetcode;
 import java.util.Arrays;
 
 /**
- * Best Time complexity: O();
- * Worst Time complexity: O();
- * Average Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1); //26个字母的空间可数。
+ * 相似题目
+ * 383 Ransom Note;
+ * 242 Valid Anagram
+ * 49 Group Anagrams
  */
 public class FirstUniqueCharacterinaString387 {
     public static int firstUniqChar(String s) {

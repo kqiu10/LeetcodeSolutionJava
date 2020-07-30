@@ -12,6 +12,7 @@ import java.util.Arrays;
  * Time complexity:O(nlogn);
  * Space complexity: O(1);
  * Description: TODO
+ * 关联题目： 215， 296;
  */
 public class MinimumMovestoEqualArrayElementsII462 {
     public int minMoves2(int[] nums) {
@@ -26,3 +27,9 @@ public class MinimumMovestoEqualArrayElementsII462 {
 
     }
 }
+/**
+ * Time complexity:O(n);
+ * Worst Time complexity: O(n^2);
+ * Space complexity: O(1);
+ * Description: quickSort;
+ */
