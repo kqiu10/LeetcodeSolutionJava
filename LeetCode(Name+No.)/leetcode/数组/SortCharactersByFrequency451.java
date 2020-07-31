@@ -42,7 +42,7 @@ public class SortCharactersByFrequency451 {
 
         }
         return sb.toString();
-    }4
+    }
 
     public static void main(String[] args) {
         frequencySort("tree");
