@@ -61,7 +61,7 @@ public class KthLargestElementinanArray215 {
  * Space complexity: O(n);
  * Description: PriorityQueue
  */
-class MethodII {
+class KthLargestElementinanArraII {
     public int KthLargestElement(int[] nums, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         for (int num : nums) {
