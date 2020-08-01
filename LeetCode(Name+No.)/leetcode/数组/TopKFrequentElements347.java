@@ -7,15 +7,12 @@ package leetcode.数组;
  * Date: 7/19/20
  */
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
- * Best Time complexity: O();
- * Worst Time complexity: O();
- * Average Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(n);
+ * Description: bucketSort;
  */
 public class TopKFrequentElements347 {
     public int[] topKFrequent(int[] nums, int k) {
@@ -50,4 +47,76 @@ public class TopKFrequentElements347 {
         return result;
     }
 
+}
+
+
+/**
+ * Time complexity:O(nlogn);
+ * Space complexity: O(n);
+ * Description: PriorityQueue;
+ */
+class topKFrequentII{
+    public static int[] topKFrequent(int[] nums, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) ->(b.getValue() - a.getValue()));
+        for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
+            maxHeap .add(entry);
+        }
+        List<Integer> res = new ArrayList<>();
+        while (res.size() < k) {
+            Map.Entry<Integer,Integer> entry = maxHeap.poll();
+            res.add(entry.getKey());
+        }
+        int size = res.size();
+        int[] result = new int[size];
+        Integer[] temp = res.toArray(new Integer[size]);
+        for (int n = 0; n < size; n++) {
+            result[n] = temp[n];
+        }
+        return result;
+    }
+
+
+    /**
+     * Time complexity:O(nlogn);
+     * Space complexity: O(n);
+     * Description: TreeMap;
+     */
+    public static void main(String[] args) {
+        System.out.println(topKFrequent(new int[]{1, 1, 1, 2, 2, 3},2));
+    }
+}
+
+
+
+class topKFrequentIII{
+    public static int[] topKFrequent(int[] nums, int k) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int num : nums) {
+            map.put(num, map.getOrDefault(num, 0) + 1);
+        }
+        TreeMap<Integer, List<Integer>> freqMap = new TreeMap<>();
+        for (int num : map.keySet()) {
+            int freq = map.get(num);
+            if (!freqMap.containsKey(freq)) {
+                freqMap.put(freq, new LinkedList<>());
+            }
+            freqMap.get(freq).add(num);
+        }
+        List<Integer> res = new LinkedList<>();
+        while (res.size() < k) {
+            Map.Entry<Integer,List<Integer>> entry = freqMap.pollLastEntry();
+            res.addAll(entry.getValue());
+        }
+        int size = res.size();
+        int[] result = new int[size];
+        Integer[] temp = res.toArray(new Integer[size]);
+        for (int n = 0; n < size; n++) {
+            result[n] = temp[n];
+        }
+        return result;
+    }
 }
