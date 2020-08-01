@@ -1,4 +1,4 @@
-package leetcode.数组;
+package 数组.bubbleSort;
 /**
  * Description: TODO
  * Package Name : leetcode;

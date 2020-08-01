@@ -1,4 +1,4 @@
-package leetcode.数组;
+package 数组.bucketSort;
 /**
  * Package Name : leetcode.数组;
  * File name : MaximumGap164;

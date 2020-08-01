@@ -29,10 +29,23 @@ public class TopKFrequentElements347 {
             bucket[freq].add(num);
         }
         List<Integer> res = new ArrayList<>();
+        /**
+         * 一次加多个元素
+         */
         for (int i = bucket.length -1 ; i >= 0 && res.size() < k; i--) {
             if (bucket[i] != null) {
                 res.addAll(bucket[i]);
             }
+            /**
+             * 一次加一个元素
+             * for (int i = bucket.length - 1; i >= 0) {
+             *     while (bucket[i] != null && j < bucket[i].size() && k > 0) {
+             *         res.add(bucket[i].get(j++));
+             *         k--;
+             *     }
+             * }
+             * */
+
 
         }
         /**
