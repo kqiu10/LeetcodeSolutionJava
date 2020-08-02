@@ -7,8 +7,8 @@ package 数组.子数组;
  */
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexinty: O(1);
  * Description: TODO
  */
 public class MinimumSizeSubarraySum209 {
