@@ -9,8 +9,8 @@ package 数组.子数组;
 import java.util.HashMap;
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(n);
  * Description: TODO
  */
 public class MaximumSizeSubarraySumEqualsk325 {
