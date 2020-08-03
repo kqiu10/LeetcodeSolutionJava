@@ -7,8 +7,8 @@ package 数组.双向双指针;
  */
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1);
  * Description: TODO
  */
 public class ContainerWithMostWater11 {
