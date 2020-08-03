@@ -39,7 +39,12 @@ public class DataStreamasDisjointIntervals352 {
     }
 
     public int[][] getIntervals() {
-        return treemap.values().toArray(new int[0][0]);
+        int[][] res = new int[treemap.size()][2];
+        int i = 0;
+        for(int[] a : treemap.values()){
+            res[i++] = a;
+        }
+        return res;
 
     }
 
