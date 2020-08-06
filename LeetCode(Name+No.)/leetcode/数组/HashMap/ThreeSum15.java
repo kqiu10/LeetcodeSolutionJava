@@ -11,8 +11,8 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n^2);
+ * Space complexity: O(n^2);
  * Description: TODO
  */
 public class ThreeSum15 {
