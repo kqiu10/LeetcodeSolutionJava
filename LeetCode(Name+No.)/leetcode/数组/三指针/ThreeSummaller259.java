@@ -9,8 +9,8 @@ package 数组.三指针;
 import java.util.Arrays;
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n^2);
+ * Space complexity: O(1);
  * Description: TODO
  */
 public class ThreeSummaller259 {
