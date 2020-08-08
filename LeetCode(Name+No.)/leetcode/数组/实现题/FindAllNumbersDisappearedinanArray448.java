@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * Time complexity:O(n);
- * Space complexity: O(1);
+ * Space complexity: O(n);
  * Description: swap
  */
 public class FindAllNumbersDisappearedinanArray448 {
@@ -42,7 +42,7 @@ public class FindAllNumbersDisappearedinanArray448 {
 
 /**
  * Time complexity:O(n);
- * Space complexity: O(1);
+ * Space complexity: O(n);
  * Description: Like BucketSort
  */
 class FindAllNumbersDisappearedinanArrayII{
