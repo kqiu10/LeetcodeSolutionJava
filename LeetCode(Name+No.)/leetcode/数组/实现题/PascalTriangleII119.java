@@ -1,4 +1,4 @@
-package leetcode;
+package 数组.实现题;
 
 import java.util.ArrayList;
 import java.util.List;
