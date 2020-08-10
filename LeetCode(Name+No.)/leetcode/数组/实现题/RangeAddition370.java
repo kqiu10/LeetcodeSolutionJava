@@ -16,8 +16,7 @@ public class RangeAddition370 {
         int[] res = new int[length];
         for (int[] update : updates) {
             int value = update[2];
-            int start = update[0];
-            int end = update[1];
+            int start = update[0], end = update[1];
             res[start] += value;
             if (end + 1 < length) {
                 res[end + 1] -= value;
