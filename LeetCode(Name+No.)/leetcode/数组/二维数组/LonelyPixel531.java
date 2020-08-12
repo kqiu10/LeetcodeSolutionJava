@@ -11,7 +11,7 @@ package 数组.二维数组;
  * Space complexity: O();
  * Description: TODO
  */
-public class LonelyPixelI531 {
+public class LonelyPixel531 {
     public int findLonelyPixel(char[][] picture) {
         int m = picture.length;
         int n = picture[0].length;
