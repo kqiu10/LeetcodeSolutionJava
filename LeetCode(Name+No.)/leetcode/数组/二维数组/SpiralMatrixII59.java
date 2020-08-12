@@ -7,8 +7,8 @@ package 数组.二维数组;
  */
 
 /**
- * Time complexity:O(m * n); m * n is the number of elements
- * Space complexity: O(m * n);
+ * Time complexity:O(n); n is the number of elements
+ * Space complexity: O(n);
  * Description: TODO
  */
 public class SpiralMatrixII59 {
@@ -20,32 +20,26 @@ public class SpiralMatrixII59 {
         int ele = 1;
         while (rowStart <= rowEnd && colStart <= colEnd) {
             for (int i = colStart; i <= colEnd; i++) {
-                matrix[rowStart][i] = ele;
-                ele++;
+                matrix[rowStart][i] = ele++;
             }
             rowStart++;
 
             for (int i = rowStart; i <= rowEnd; i++) {
-                matrix[i][colEnd] = ele;
-                ele++;
+                matrix[i][colEnd] = ele++;
             }
             colEnd--;
 
-            if (rowStart <= rowEnd) {
-                for (int i = colEnd; i >= colStart; i--) {
-                    matrix[rowEnd][i] = ele;
-                    ele++;
-                }
-                rowEnd--;
-            }
 
-            if (colStart <= colEnd) {
-                for (int i = rowEnd; i >= rowStart; i--) {
-                    matrix[i][colStart] = ele;
-                    ele++;
-                }
-                colStart++;
+            for (int i = colEnd; i >= colStart; i--) {
+                matrix[rowEnd][i] = ele++;
             }
+            rowEnd--;
+
+
+            for (int i = rowEnd; i >= rowStart; i--) {
+                matrix[i][colStart] = ele++;
+            }
+            colStart++;
         }
         return matrix;
 
