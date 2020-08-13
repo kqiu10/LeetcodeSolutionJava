@@ -15,9 +15,8 @@ public class SearchInsertPosition35 {
     public int searchInsert(int[] nums, int target) {
         int l = 0;
         int r = nums.length - 1; ;
-        int pos = 0;
         while (l <= r) {
-            pos = (r - l) / 2 + l;
+            int pos = (r - l) / 2 + l;
             if (nums[pos] > target) r = pos - 1;
             else if (nums[pos] < target) l = pos + 1;
             else return pos;
