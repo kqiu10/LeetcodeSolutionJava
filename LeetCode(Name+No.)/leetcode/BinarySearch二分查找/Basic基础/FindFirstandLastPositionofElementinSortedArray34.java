@@ -10,9 +10,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Time complexity:O();
- * Space complexity: O();
- * Description: TODO
+ * Time complexity:O(logn);
+ * Space complexity: O(1);
+ * Description: take care the bound of while loop
  */
 public class FindFirstandLastPositionofElementinSortedArray34 {
     public int[] searchRange(int[] nums, int target) {
