@@ -1,4 +1,4 @@
-package BinarySearch二分查找.Basic;
+package BinarySearch二分查找.Basic基础;
 /**
  * Package Name : BinarySearch二分查找.基础;
  * File name : SearchInsertPosition35;
@@ -22,6 +22,5 @@ public class SearchInsertPosition35 {
             else return pos;
         }
         return l;
-
     }
 }

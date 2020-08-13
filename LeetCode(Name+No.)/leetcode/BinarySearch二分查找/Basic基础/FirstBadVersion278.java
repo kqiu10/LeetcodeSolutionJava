@@ -1,4 +1,4 @@
-package BinarySearch二分查找.Basic;
+package BinarySearch二分查找.Basic基础;
 /**
  * Package Name : BinarySearch二分查找.Basic;
  * File name : FirstBadVersion278;
