@@ -26,6 +26,6 @@ public class FirstBadVersion278 {
     }
     //avoid IDE throw error;
     private boolean isBadVersion(int mid) {
-        return true
+        return true;
     }
 }
