@@ -23,7 +23,7 @@ import java.util.List;
  * To the right of 1 there is 0 smaller element.
  *
  * Time complexity:O(n^2) (worst case)  nlogn as usual;
- * Space complexity: O();
+ * Space complexity: O(n);
  * Description:
  * Ex [5, 2, 6, 1]
  * use List insert from end to start as sorted, the index result is [0, 1, 1, 2];
