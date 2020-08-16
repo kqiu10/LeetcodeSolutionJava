@@ -5,29 +5,12 @@ package LinkedList链表.Basic链表;
  * Creator: Kane;
  * Date: 8/16/20
  */
-
 /**
  * Time complexity:O(n);
  * Space complexity: O(1);
  * Description: TODO
  */
 public class SwapNodesInPairs24 {
-     class ListNode {
-         int val;
-         ListNode next;
-
-         ListNode() {
-         }
-
-         ListNode(int val) {
-             this.val = val;
-         }
-
-         ListNode(int val, ListNode next) {
-             this.val = val;
-             this.next = next;
-         }
-     }
      public ListNode swapPairs(ListNode head) {
          if (head == null || head.next == null) return head;
          ListNode dummy = new ListNode(0);
