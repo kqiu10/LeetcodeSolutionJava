@@ -7,12 +7,12 @@ package LinkedList链表.Basic链表;
  */
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1);
  * Description: TODO
  */
 public class OddEvenLinkedList328 {
-    public ListNode oddEvenList(ListNode head) {
+    public static ListNode oddEvenList(ListNode head) {
         if (head == null || head.next == null) return head;
         ListNode odd = head;
         ListNode even = head.next;
@@ -27,5 +27,9 @@ public class OddEvenLinkedList328 {
         return head;
 
 
+    }
+
+    public static void main(String[] args) {
+        oddEvenList(new ListNode(0, new ListNode (5, new ListNode( 10 , null))));
     }
 }
