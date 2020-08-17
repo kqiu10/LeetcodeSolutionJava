@@ -1,10 +1,11 @@
-package LinkedList链表.Basic链表;
+package LinkedList链表.Basic;
 /**
  * Package Name : LinkedList链表.Basic链表;
  * File name : SwapNodesInPairs24;
  * Creator: Kane;
  * Date: 8/16/20
  */
+
 /**
  * Time complexity:O(n);
  * Space complexity: O(1);

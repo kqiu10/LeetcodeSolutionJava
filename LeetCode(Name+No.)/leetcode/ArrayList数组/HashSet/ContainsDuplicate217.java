@@ -1,4 +1,4 @@
-package 数组.HashSet;
+package ArrayList数组.HashSet;
 /**
  * Package Name : 数组.HashSet;
  * File name : ContainsDuplicate217;

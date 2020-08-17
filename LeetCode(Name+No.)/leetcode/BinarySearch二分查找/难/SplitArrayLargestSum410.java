@@ -18,7 +18,7 @@ package BinarySearch二分查找.难;
  * 5 ~ 9    mid = 7    [1 2 3] [4] [5]  m = 3 == 3; right = mid - 1 = 6
  * 5 ~ 6    mid = 5    [1 2] [3] [4] [5]  m = 4 > 3; left = mid + 1 = 6
  * 6 ~ 6    mid = 6    [1 2 3] [4] [5]  m = 3 == 3; right = mid - 1 = 5;
- * return 
+ * return
  *
  */
 public class SplitArrayLargestSum410 {

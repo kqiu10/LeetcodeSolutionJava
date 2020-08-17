@@ -1,4 +1,4 @@
-package 数组.特殊;
+package ArrayList数组.特殊;
 /**
  * Package Name : 数组.特殊;
  * File name : SudokuSolver37;

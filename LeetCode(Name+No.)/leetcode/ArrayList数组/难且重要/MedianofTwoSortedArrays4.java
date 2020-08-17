@@ -1,4 +1,4 @@
-package 数组.难且重要;
+package ArrayList数组.难且重要;
 /**
  * Package Name : 数组.难且重要;
  * File name : MedianofTwoSortedArrays4;

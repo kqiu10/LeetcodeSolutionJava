@@ -1,4 +1,4 @@
-package LinkedList链表.Basic链表;
+package LinkedList链表.Basic;
 /**
  * Package Name : LinkedList链表.Basic链表;
  * File name : PartitionList86;

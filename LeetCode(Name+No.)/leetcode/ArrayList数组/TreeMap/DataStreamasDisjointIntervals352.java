@@ -1,4 +1,4 @@
-package 数组.TreeMap;
+package ArrayList数组.TreeMap;
 /**
  * Package Name : 数组.子数组;
  * File name : DataStreamasDisjointIntervals352;

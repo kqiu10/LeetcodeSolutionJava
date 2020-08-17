@@ -1,4 +1,4 @@
-package 数组.单向双指针;
+package ArrayList数组.单向双指针;
 /**
  * Package Name : 数组.单双向指针;
  * File name : RemoveElement27;

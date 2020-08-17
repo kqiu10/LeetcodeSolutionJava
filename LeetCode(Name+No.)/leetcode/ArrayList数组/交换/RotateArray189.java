@@ -1,4 +1,4 @@
-package 数组.交换;
+package ArrayList数组.交换;
 /**
  * Package Name : 数组.交换;
  * File name : RotateArray189;

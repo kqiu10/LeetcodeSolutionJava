@@ -1,4 +1,4 @@
-package 数组.全排序;
+package ArrayList数组.全排序;
 /**
  * Package Name : 数组.全排序;
  * File name : QueueReconstructionbyHeight406;

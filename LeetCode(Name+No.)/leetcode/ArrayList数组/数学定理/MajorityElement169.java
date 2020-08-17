@@ -1,4 +1,4 @@
-package 数组.数学定理;
+package ArrayList数组.数学定理;
 /**
  * Package Name : 数组.数学定理;
  * File name : MajorityElement169;

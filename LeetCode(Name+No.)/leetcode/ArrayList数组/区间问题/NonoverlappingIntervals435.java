@@ -1,4 +1,4 @@
-package 数组.区间问题;
+package ArrayList数组.区间问题;
 /**
  * Package Name : 数组.区间问题;
  * File name : NonoverlappingIntervals435;

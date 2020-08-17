@@ -1,4 +1,4 @@
-package 数组.bucketSort;
+package ArrayList数组.bucketSort;
 /**
  * Package Name : 数组.bucketSort;
  * File name : ContainsDuplicateIII220;

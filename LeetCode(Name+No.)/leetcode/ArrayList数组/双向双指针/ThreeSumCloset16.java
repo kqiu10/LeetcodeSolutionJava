@@ -1,4 +1,4 @@
-package 数组.双向双指针;
+package ArrayList数组.双向双指针;
 /**
  * Package Name : 数组.双向双指针;
  * File name : ThreeSumCloset;

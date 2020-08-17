@@ -1,4 +1,4 @@
-package 数组.三指针;
+package ArrayList数组.三指针;
 /**
  * Package Name : 数组.三指针;
  * File name : ShortestUnsortedContinuousSubarray581;

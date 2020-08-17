@@ -1,4 +1,4 @@
-package 数组.bubbleSort; /**
+package ArrayList数组.bubbleSort; /**
  * Package Name : PACKAGE_NAME;
  * File name : moveZeros;
  * Creator: Kane;
