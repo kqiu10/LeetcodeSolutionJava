@@ -75,6 +75,6 @@ class PlusOneLinkedListII {
     }
 
     public static void main(String[] args) {
-        plusOne(new ListNode(1, new ListNode(2, new ListNode(9))));
+        plusOne(new ListNode(9, new ListNode(9, new ListNode(9))));
     }
 }
