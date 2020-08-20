@@ -10,9 +10,13 @@ package LinkedList链表.综合练习;
  * Time complexity:O(n);
  * Space complexity: O(1);
  * Description: findMiddle + reverse
+ * Ex 1 -> 2 -> 2 -> 1
+ *
+ * p 1 -> 2 -> 1 -> 2;
+ * q 1 -> 2
  */
 public class PalindromeLinkedList234 {
-    public boolean isPalindrome(ListNode head) {
+    public static boolean isPalindrome(ListNode head) {
         if (head == null) return true;
         ListNode middle = findMiddle(head);
         middle.next = reverse(middle.next);
@@ -26,7 +30,7 @@ public class PalindromeLinkedList234 {
         return true;
 
     }
-    private ListNode findMiddle(ListNode head) {
+    private static ListNode findMiddle(ListNode head) {
         ListNode slow = head;
         ListNode fast = head.next;
         while (fast != null && fast.next != null) {
@@ -35,7 +39,7 @@ public class PalindromeLinkedList234 {
         }
         return slow;
     }
-    private ListNode reverse(ListNode head) {
+    private static ListNode reverse(ListNode head) {
         ListNode prev = null;
         while (head != null) {
             ListNode temp = head.next;
@@ -45,5 +49,9 @@ public class PalindromeLinkedList234 {
 
         }
         return prev;
+    }
+
+    public static void main(String[] args) {
+        isPalindrome(new ListNode(1, new ListNode(2, new ListNode(2, new ListNode(1)))));
     }
 }
