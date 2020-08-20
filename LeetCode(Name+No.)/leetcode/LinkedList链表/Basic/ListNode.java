@@ -12,8 +12,8 @@ package LinkedList链表.Basic;
  * Description: TODO
  */
 public class ListNode {
-        int val;
-        ListNode next;
+        public int val;
+        public ListNode next;
 
         ListNode() {
         }
