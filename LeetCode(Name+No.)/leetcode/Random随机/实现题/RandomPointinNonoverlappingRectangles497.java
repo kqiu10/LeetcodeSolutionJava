@@ -1,6 +1,6 @@
-package Random随机.基础.实现题;
+package Random随机.实现题;
 /**
- * Package Name : Random随机.基础.实现题;
+ * Package Name : Random随机.实现题;
  * File name : RandomPointinNonoverlappingRectangles497;
  * Creator: Kane;
  * Date: 8/20/20
