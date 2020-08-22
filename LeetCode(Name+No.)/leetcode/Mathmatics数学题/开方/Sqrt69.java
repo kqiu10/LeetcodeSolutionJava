@@ -37,6 +37,11 @@ public class Sqrt69 {
         System.out.println(mySqrt(2147483647));
     }
 }
+
+/**
+ * Time complexity:不知道; Newthon Method
+ * Space complexity: O(1);
+ */
 class mySqrtII {
     public int mySqrtII(int x) {
         long res = x;

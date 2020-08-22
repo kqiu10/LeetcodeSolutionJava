@@ -34,17 +34,15 @@ public class DivideTwoIntegers29 {
         }
         return res;
     }
-    public static  long divide(long ldivided, long ldivisor) {
-        if (ldivided < ldivisor) {
-            return 0;
-        }
+    public static long divide(long ldividend, long ldivisor) {
+        if (ldividend < ldivisor) return 0;
         long sum = ldivisor;
         long multiple = 1;
-        while ((sum + sum) <= ldivided) {
+        while ((sum + sum) <= ldividend) {
             sum += sum;
             multiple += multiple;
         }
-        return multiple + divide(ldivided - sum, ldivisor);
+        return  multiple + divide(ldividend - sum, ldivisor);
     }
 
     public  static void main(String[] args) {
