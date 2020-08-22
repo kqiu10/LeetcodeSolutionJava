@@ -1,4 +1,4 @@
-package Mathmatics数学题.加减乘除;
+package Mathematics数学题.加减乘除;
 /**
  * Package Name : Mathmatics数学题.加减乘除;
  * File name : FourSum18;
