@@ -62,7 +62,9 @@ public class ValidPerfectSquare367 {
     /**
      * Time complexity:unknown;
      * Space complexity: O(1);
-     *Newton Method
+     * Newton Method
+     * Web : https://www.zhihu.com/question/20690553?;
+     * 公式 熟记
      */
     public boolean isPerfectSquareIV(int num) {
         long x = num;
