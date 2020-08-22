@@ -10,7 +10,9 @@ package leetcode.BitWise位运算;
 /**
  * Time complexity:O(n^2);
  * Space complexity: O(n);
+ *  convert string to int to compare
  *  val |= 1 << (words[i].charAt(j) - 'a');
+ *  |= 等于 +=
  *  "abc"
  *  a : 1 << 0 00001 = 1
  *  b : 1 << 1 00010 = 2
