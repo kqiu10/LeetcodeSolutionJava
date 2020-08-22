@@ -12,7 +12,7 @@ package leetcode.Mathmatics数学题;
  *           = (5^(-1) * 5^(-1)) * (5^(-1) * 5^(-1)) * 5
  *           = ((5^0*5^0*5) * (5^0*5^0*5) * 5 ) * ((5^0*5^0*5) * (5^0*5^0*5) * 5 ) * 5
  * Recursion
- * Time complexity:O(logn); //二分法;
+ * Time complexity:O(logn);
  * Space complexity: O(logn);
  */
 public class Pow50 {
