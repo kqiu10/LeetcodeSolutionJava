@@ -1,4 +1,4 @@
-package leetcode.Mathmatics数学题;
+
 /**
  * Package Name : leetcode.Mathmatics数学题;
  * File name : FractionToRecurringDecimal166;
