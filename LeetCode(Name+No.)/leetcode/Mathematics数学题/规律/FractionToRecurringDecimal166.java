@@ -9,9 +9,12 @@ package leetcode.Mathmatics数学题;
 import java.util.HashMap;
 
 /**
- * Time complexity:O();
- * Space complexity: O();
- * Description: TODO
+ * Time complexity:O(n);
+ * Space complexity: O(n);
+ * Description:
+ * 1. 0 + -
+ * 2. 整数
+ * 3. 小数 -> 循环
  */
 public class FractionToRecurringDecimal166 {
     public String fractionToDecimal(int numerator, int denominator) {
