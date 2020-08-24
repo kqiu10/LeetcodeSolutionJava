@@ -2,7 +2,7 @@ package leetcode.BitWise位运算;
 /**
  * Description: TODO
  * Package Name : leetcode.BitWise;
- * File name : RepeatedDNASequences187;
+ * File name : _187_RepeatedDNASequences;
  * Creator: Kane;
  * Date: 7/21/20
  */
@@ -15,7 +15,7 @@ import java.util.List;
  * Time complexity:O();
  * Space complexity: O();
  */
-public class RepeatedDNASequences187 {
+public class _187_RepeatedDNASequences {
     public List<String> findRepeatedDnaSequences(String s) {
         HashSet<String> set = new HashSet<>();
         HashSet<String> res = new HashSet<>();

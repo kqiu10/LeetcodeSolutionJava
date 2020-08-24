@@ -19,7 +19,7 @@ package leetcode.BitWise位运算;
  * n - 1  : 15 = 01111;
  * 14 = 01110
  */
-public class PowerOfTwo231 {
+public class _231_PowerOfTwo {
     public static boolean isPowerOfTwo(int n) {
         return n > 0 && ((n & (n - 1)) == 0);
 

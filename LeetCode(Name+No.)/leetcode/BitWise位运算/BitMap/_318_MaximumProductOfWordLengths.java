@@ -19,7 +19,7 @@ package leetcode.BitWise位运算;
  *  c : 1 << 2 00100 = 4
  *  abc = 1 + 2 + 4 = 7
  */
-public class MaximumProductOfWordLengths318 {
+public class _318_MaximumProductOfWordLengths {
     public int maxProduct(String[] words) {
         int val;
         int res = 0;

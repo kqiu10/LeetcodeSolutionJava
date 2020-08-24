@@ -12,7 +12,7 @@ package leetcode.BitWise位运算;
  * Round 3
  * [3]
  * Package Name : leetcode.BitWise位运算;
- * File name : Subsets78;
+ * File name : _78_Subsets;
  * Creator: Kane;
  * Date: 7/27/20
  */
@@ -24,7 +24,7 @@ import java.util.List;
  * Time complexity:O(n*2^n);
  * Space complexity: O(n);
  */
-public class Subsets78 {
+public class _78_Subsets {
     public static List<List<Integer>> subsets(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         if (nums == null || nums.length == 0) return res;

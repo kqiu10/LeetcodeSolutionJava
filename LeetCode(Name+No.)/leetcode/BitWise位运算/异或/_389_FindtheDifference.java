@@ -2,7 +2,7 @@ package leetcode.BitWise位运算;
 /**
  * Description: 相同字符异或后为0，不同为1，a^b^b = a, 且异或有交换律，所以让s与t中所有字符异或一遍就去除了出现偶数遍的字符，只留下了只出现奇数次的字符;
  * Package Name : leetcode;
- * File name : FindtheDifference389;
+ * File name : _389_FindtheDifference;
  * Creator: Kane;
  * Date: 7/20/20
  */
@@ -11,7 +11,7 @@ package leetcode.BitWise位运算;
  * Time complexity:O(n);
  * Space complexity: O(1);
  */
-public class FindtheDifference389 {
+public class _389_FindtheDifference {
     public static char findTheDifference(String s, String t) {
         char c = t.charAt(t.length() - 1);
         System.out.println(c);

@@ -2,7 +2,7 @@ package leetcode.BitWise位运算;
 /**
  * Description: TODO
  * Package Name : leetcode.BitWise;
- * File name : ReverseBits190;
+ * File name : _190_ReverseBits;
  * Creator: Kane;
  * Date: 7/20/20
  */
@@ -11,7 +11,7 @@ package leetcode.BitWise位运算;
  * Time complexity:O(1);
  * Space complexity: O(1);
  */
-public class ReverseBits190 {
+public class _190_ReverseBits {
     public int reverseBits(int n) {
         int res = 0;
         for (int i = 0; i< 32; i++) {

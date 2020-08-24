@@ -19,7 +19,7 @@ package leetcode.BitWise位运算;
  * 所以%4得到最优解
  * 要考虑3的特殊情况
  */
-public class IntegerReplacement397 {
+public class _397_IntegerReplacement {
     public int integerReplacement(int n) {
         /**
          * MAX_VALUE = 2^31 - 1;需要32次
