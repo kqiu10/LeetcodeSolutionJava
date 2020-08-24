@@ -1,4 +1,4 @@
-package leetcode;
+package Stack栈.应用;
 /**
  * Description: TODO
  * Package Name : leetcode;
@@ -8,8 +8,6 @@ package leetcode;
  */
 
 
-import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.Stack;
 
 /**
