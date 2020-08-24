@@ -1,4 +1,4 @@
-package leetcode;
+package Stack栈.应用;
 /**
  * Description: TODO
  * Package Name : leetcode;
@@ -19,7 +19,6 @@ public class ImplementStackUsingQueues225 {
     Queue<Integer> queue;
     public ImplementStackUsingQueues225() {
         queue = new LinkedList<>();
-
     }
 
     /** Push element x onto stack. */
