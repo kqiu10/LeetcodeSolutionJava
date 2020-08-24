@@ -13,12 +13,12 @@ import java.util.Stack;
  * Space complexity: O(n);
  * Description: TODO
  */
-public class MinStackstack155 {
+public class _155_MinStackstack {
     Stack<Integer> stack;
     Stack<Integer> minStack;
 
     /** initialize your data structure here. */
-    public MinStackstack155() {
+    public _155_MinStackstack() {
         stack = new Stack<>();
         minStack = new Stack<>();
 

@@ -13,10 +13,10 @@ import java.util.Stack;
  * Time complexity:O();
  * Space complexity: O();
  */
-public class MinStack155 {
+public class _155_MinStack {
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
-    public MinStack155() {
+    public _155_MinStack() {
         stack = new Stack<>();
         minStack = new Stack<>();
 
@@ -60,7 +60,7 @@ public class MinStack155 {
     }
 
     public static void main(String[] args) {
-        MinStack155 minstack = new MinStack155();
+        _155_MinStack minstack = new _155_MinStack();
         minstack.push(3);
         System.out.println(minstack.getMin());
         minstack.push(-1);

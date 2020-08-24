@@ -11,12 +11,12 @@ package Random随机.RejectionSampling;
  * Space complexity: O(1);
  * Description: TODO
  */
-public class GenerateRandomPointinaCircle478 {
+public class _478_GenerateRandomPointinaCircle {
     double rad;
     double xc;
     double yc;
 
-    public GenerateRandomPointinaCircle478(double radius, double x_center, double y_center) {
+    public _478_GenerateRandomPointinaCircle(double radius, double x_center, double y_center) {
         rad = radius;
         xc = x_center;
         yc = y_center;

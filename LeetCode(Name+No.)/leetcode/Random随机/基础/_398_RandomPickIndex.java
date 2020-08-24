@@ -13,11 +13,11 @@ import java.util.Random;
  * Space complexity: O(1);
  * Description: TODO
  */
-public class RandomPickIndex398 {
+public class _398_RandomPickIndex {
     int[] nums;
     Random rnd;
 
-    public RandomPickIndex398(int[] nums) {
+    public _398_RandomPickIndex(int[] nums) {
         this.nums = nums;
         rnd = new Random();
 

@@ -14,11 +14,11 @@ import java.util.Stack;
  * Time complexity:O();
  * Space complexity: O();
  */
-public class ImplementQueueUsingStacks232 {
+public class _232_ImplementQueueUsingStacks {
     Stack<Integer> stack1;
     Stack<Integer> stack2;
     /** Initialize your data structure here. */
-    public ImplementQueueUsingStacks232() {
+    public _232_ImplementQueueUsingStacks() {
         stack1 = new Stack<>();
         stack2 = new Stack<>();
 
@@ -59,7 +59,7 @@ public class ImplementQueueUsingStacks232 {
 
 
     public static void main(String[] args) {
-        ImplementQueueUsingStacks232 test = new ImplementQueueUsingStacks232();
+        _232_ImplementQueueUsingStacks test = new _232_ImplementQueueUsingStacks();
         test.push(5);
         test.push(4);
         test.push(3);

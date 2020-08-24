@@ -14,10 +14,10 @@ import java.util.Queue;
  * Time complexity:O();
  * Space complexity: O();
  */
-public class ImplementStackUsingQueues225 {
+public class _225_ImplementStackUsingQueues {
     /** Initialize your data structure here. */
     Queue<Integer> queue;
-    public ImplementStackUsingQueues225() {
+    public _225_ImplementStackUsingQueues() {
         queue = new LinkedList<>();
     }
 
@@ -54,7 +54,7 @@ public class ImplementStackUsingQueues225 {
     }
 
     public static void main(String[] args) {
-        ImplementStackUsingQueues225 queue = new ImplementStackUsingQueues225();
+        _225_ImplementStackUsingQueues queue = new _225_ImplementStackUsingQueues();
         queue.push(1);
         queue.push(2);
         queue.print();

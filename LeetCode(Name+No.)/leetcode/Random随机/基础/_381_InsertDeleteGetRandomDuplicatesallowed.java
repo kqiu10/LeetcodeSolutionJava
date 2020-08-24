@@ -13,13 +13,13 @@ import java.util.*;
  * Space complexity: O(n);
  * Description: TODO
  */
-public class InsertDeleteGetRandomDuplicatesallowed381 {
+public class _381_InsertDeleteGetRandomDuplicatesallowed {
     HashMap<Integer, HashSet<Integer>> map;
     Random rnd;
     List<Integer> list;
 
     /** Initialize your data structure here. */
-    public InsertDeleteGetRandomDuplicatesallowed381() {
+    public _381_InsertDeleteGetRandomDuplicatesallowed() {
         map = new HashMap<>();
         rnd = new Random();
         list = new ArrayList<>();

@@ -14,13 +14,13 @@ import java.util.TreeMap;
  * Space complexity: O(n + m);
  * Description: we need TreeMap if we both need accumulation sum and sort
  */
-public class RandomPointinNonoverlappingRectangles497 {
+public class _497_RandomPointinNonoverlappingRectangles {
     TreeMap<Integer, Integer> map;
     int[][] rects;
     Random random;
     int area;
 
-    public RandomPointinNonoverlappingRectangles497(int[][] rects) {
+    public _497_RandomPointinNonoverlappingRectangles(int[][] rects) {
         map = new TreeMap<>();
         this.rects = rects;
         random = new Random();

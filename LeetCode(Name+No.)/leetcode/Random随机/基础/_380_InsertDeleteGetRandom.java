@@ -15,13 +15,13 @@ import java.util.Random;
  * Space complexity: O(n);
  * Description: TODO
  */
-public class InsertDeleteGetRandom380 {
+public class _380_InsertDeleteGetRandom {
     HashMap<Integer, Integer> map;
     ArrayList<Integer> list;
     Random rnd;
 
     /** Initialize your data structure here. */
-    public InsertDeleteGetRandom380() {
+    public _380_InsertDeleteGetRandom() {
         map = new HashMap<>();
         list = new ArrayList<>();
         rnd = new Random();

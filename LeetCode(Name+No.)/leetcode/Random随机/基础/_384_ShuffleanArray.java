@@ -13,11 +13,11 @@ import java.util.Random;
  * Space complexity: O(n);
  * Description: TODO
  */
-public class ShuffleanArray384 {
+public class _384_ShuffleanArray {
     int[] nums;
     Random rnd;
 
-    public ShuffleanArray384(int[] nums) {
+    public _384_ShuffleanArray(int[] nums) {
         this.nums = nums;
         rnd = new Random();
 
@@ -47,7 +47,7 @@ public class ShuffleanArray384 {
     }
 
     public static void main(String[] args) {
-        ShuffleanArray384 test = new ShuffleanArray384(new int[]{1,2 ,3});
+        _384_ShuffleanArray test = new _384_ShuffleanArray(new int[]{1,2 ,3});
         test.shuffle();
     }
 }

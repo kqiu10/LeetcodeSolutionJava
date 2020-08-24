@@ -13,7 +13,7 @@ package Random随机.RejectionSampling;
  * rand(n) -> rand(2n)  : rand(2n) = n *( rand(n) - 1) + rand(n) - 1;
  * rand(k*n) -> rand(n)  : rand(K * n) % n + 1;
  */
-public class ImplementRand10UsingRand7470 {
+public class _470_ImplementRand10UsingRand7 {
     public int rand10() {
         int res = 40;
         while (res >= 40) {

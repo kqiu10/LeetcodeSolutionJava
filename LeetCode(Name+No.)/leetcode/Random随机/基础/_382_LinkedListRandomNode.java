@@ -15,10 +15,10 @@ import java.util.Random;
  * Space complexity: O(n);
  * Description: TODO
  */
-public class LinkedListRandomNode382 {
+public class _382_LinkedListRandomNode {
     ListNode head;
     Random rnd;
-    public LinkedListRandomNode382(ListNode head) {
+    public _382_LinkedListRandomNode(ListNode head) {
         this.head = head;
         rnd = new Random();
     }

@@ -24,7 +24,7 @@ class Node {
         this.random = null;
     }
 }
-public class CopyListwithRandomPointer138 {
+public class _138_CopyListwithRandomPointer {
     public Node copyRandomList(Node head) {
         HashMap<Node, Node> map = new HashMap<>();
         Node cur = head;
