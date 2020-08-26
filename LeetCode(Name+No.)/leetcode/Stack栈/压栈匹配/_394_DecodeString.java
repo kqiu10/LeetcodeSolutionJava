@@ -23,7 +23,7 @@ public class _394_DecodeString {
         while (idx < s.length()) {
             if (Character.isDigit(s.charAt(idx))) {
                 int count = 0;
-                while (Character.isDight(s.charAt(idx))) {
+                while (Character.isDigit(s.charAt(idx))) {
                     count = count * 10 + (s.charAt(idx) - '0');
                     idx++;
                 }
@@ -33,9 +33,19 @@ public class _394_DecodeString {
                 res = "";
                 idx++;
             } else if (s.charAt(idx) == ']') {
-
+                StringBuilder temp = new StringBuilder(resStack.pop());
+                int time = countStack.pop();
+                for (int i = 0; i < time; i++) {
+                    temp.append(res);
+                }
+                res = temp.toString();
+                idx++;
+            } else {
+                res += s.charAt(idx++);
             }
+
         }
+        return res;
 
     }
 }
