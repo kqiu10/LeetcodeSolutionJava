@@ -7,9 +7,16 @@ package String字符串.base基础;
  */
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n); s.trim() takes O(n) time Complexity
+ * Space complexity: O(1);
  * Description: TODO
  */
 public class _434_NumberofSegmentsinaString {
+    public int countSegments(String s) {
+        s =s.trim();
+        if (s == null || s.length() == 0) return 0;
+        String[] res = s.split("\\s+");
+        return res.length;
+
+    }
 }
