@@ -1,4 +1,4 @@
-package String字符串.实现;
+package String字符串.实现题;
 /**
  * Package Name : String字符串.实现;
  * File name : _520DetectCapital;
