@@ -50,6 +50,6 @@ public class _163_MissingRanges {
     }
 
     public static void main(String[] args) {
-        findMissingRanges(new int[]{0, 1, 3, 50, 97}, 0, 99);
+        findMissingRanges(new int[]{0, 1, 1}, 0, 1);
     }
 }
