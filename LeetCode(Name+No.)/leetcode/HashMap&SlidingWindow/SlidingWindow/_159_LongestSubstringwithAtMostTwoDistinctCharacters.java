@@ -6,6 +6,8 @@ package SlidingWindow;
  * Date: 9/4/20
  */
 
+import java.util.HashMap;
+
 /**
  * Given a string s , find the length of the longest substring t  that contains at most 2
  * distinct characters.
@@ -23,7 +25,7 @@ package SlidingWindow;
  *
  * Time complexity:O(n);
  * Space complexity: O(1);
- * Description: TODO
+ * Description: without extra space
  */
 public class _159_LongestSubstringwithAtMostTwoDistinctCharacters {
     public int lengthOfLongestSubstringTwoDistinct(String s) {
@@ -42,4 +44,36 @@ public class _159_LongestSubstringwithAtMostTwoDistinctCharacters {
         return res;
     }
 
+}
+/**
+ *
+ * Time complexity:O(n);
+ * Space complexity: O(n);
+ * Description: HashMap
+ * eceba
+ */
+class LongestSubstringwithAtMostTwoDistinctCharactersII {
+    public int lengthOfLongestSubstringTwoDistinct(String s) {
+        if (s.length() == 0 || s == null) return 0;
+        int[] count = new int[128];
+        int res = 0;
+        int start = 0, end = 0;
+        HashMap<Character, Integer> map = new HashMap<>();
+        while (end < s.length()) {
+            if (map.size() <= 2) {
+                map.put(s.charAt(end), end);
+                end++;
+            }
+            if (map.size() > 2) {
+                int leftMost = s.length();
+                for (int num : map.values()) {
+                    leftMost = Math.min(leftMost, num);
+                }
+                map.remove(s.charAt(leftMost));
+                start = leftMost + 1;
+            }
+            res = Math.max(res, end - start);
+        }
+        return res;
+    }
 }
