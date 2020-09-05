@@ -34,7 +34,7 @@ package SlidingWindow;
  */
 public class _340_LongestSubstringwithAtMostKDistinctCharacters {
     public int lengthOfLongestSubstringKDistinct(String s, int k) {
-        int[] count = new int[256];
+        int[] count = new int[128];
         int res = 0, num = 0, j = 0;
         for (int i = 0; i < s.length(); i++) {
             if (count[s.charAt(i)]++ == 0) num++;
