@@ -49,7 +49,7 @@ public class _395_LongestSubstringwithAtLeastKRepeatingCharacters {
         while (end < s.length()) {
             if (count[s.charAt(end)]++ == 0) numUnique++;
             if (count[s.charAt(end++)] == k) numNoLessThanK++;
-            
+
             while (numUnique > numUniqueTarget) {
                 if (count[s.charAt(start)]-- == k) numNoLessThanK--;
                 if (count[s.charAt(start++)] == 0) numUnique--;
