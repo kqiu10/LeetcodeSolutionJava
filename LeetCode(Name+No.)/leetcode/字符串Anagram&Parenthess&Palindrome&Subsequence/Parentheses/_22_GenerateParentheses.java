@@ -52,5 +52,6 @@ public class _22_GenerateParentheses {
 
     public static void main(String[] args) {
         generateParenthesis(3);
+
     }
 }
