@@ -34,7 +34,7 @@ package Palindrome;
  *     end
  * end control the remaining string behind end
  *
- * edge case "a a a a a b c a a a a a" Time Complexity : O(n^2) 
+ * edge case "a a a a a b c a a a a a" Time Complexity : O(n^2)
  */
 public class _214_ShortestPalindrome {
     public String shortestPalindrome(String s) {
