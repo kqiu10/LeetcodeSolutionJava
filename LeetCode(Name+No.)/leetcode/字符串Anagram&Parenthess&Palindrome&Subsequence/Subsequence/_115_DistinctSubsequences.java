@@ -48,9 +48,43 @@ package Subsequence;
  * babgbag
  *     ^^^
  *
- * Time complexity:O();
- * Space complexity: O();
- * Description: TODO
+ * Time complexity:O(m * n);
+ * Space complexity: O(m * n);
+ * Description:
+ * 1. S.charAt(i) != T.charAt(j)
+ *    dp[i][j] = dp[i - 1][j];
+ *
+ * 2. S.charAt(i) == T.charAt(j)
+ *    dp[i][j] = dp[i - 1][j] + dp[i - 1][j - 1];
+ *
+ * S = "rabbbit" T = "rabbit"
+ * 
+ * S -> T 存在几种可能表
+ *    "" r a b b i t
+ * ""  1 0 0 0 0 0 0
+ * r   1 1 0 0 0 0 0
+ * a   1 1 1 0 0 0 0
+ * b   1 1 1 2 1 0 0
+ * b   1 1 1 3 3 0 0
+ * i   1 1 1 3 3 3 0
+ * t   1 1 1 3 3 3 3
+ *
  */
 public class _115_DistinctSubsequences {
+    public int numDistinct(String S, String T) {
+        int[][] dp = new int[S.length() + 1][T.length() + 1];
+        for (int i = 0; i < S.length(); i++) {
+            dp[i][0] = 1;
+        }
+        for (int i = 1; i <= S.length(); i++) {
+            for (int j = 1; j <= T.length(); j++) {
+                if (S.charAt(i - 1) == T.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j] + dp[i - 1][j - 1];
+                } else {
+                    dp[i][j] = dp[i - 1][j];
+                }
+            }
+        }
+        return dp[S.length()][T.length()];
+    }
 }
