@@ -58,7 +58,7 @@ package Subsequence;
  *    dp[i][j] = dp[i - 1][j] + dp[i - 1][j - 1];
  *
  * S = "rabbbit" T = "rabbit"
- * 
+ *
  * S -> T 存在几种可能表
  *    "" r a b b i t
  * ""  1 0 0 0 0 0 0
