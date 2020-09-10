@@ -20,12 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce2aeb1d-9707-4af2-a64d-e205fa047dd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HashTable.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separateChaining/IHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/IHashTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separateChaining/impl/HashTableSeparateChainingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/separateChaining/impl/HashTableSeparateChainingImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/separateChaining/impl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/separateChaining/impl/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="JupyterTrust" id="f25585b4-0e8d-45c1-a6be-8171f80adf7d" />
   <component name="ProjectId" id="1hKKwN774m2VcqONq2Y61ztYqZb" />
@@ -73,6 +71,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>

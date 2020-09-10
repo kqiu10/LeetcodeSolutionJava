@@ -6,7 +6,7 @@ package separateChaining.impl;
  * Date: 9/10/20
  */
 
-import separateChaining.IHashTable;
+import IHashTable;
 
 /**
  * Time complexity:O();
