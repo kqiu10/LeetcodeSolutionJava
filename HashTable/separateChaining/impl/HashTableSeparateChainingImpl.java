@@ -1,3 +1,4 @@
+package separateChaining.impl;
 /**
  * Package Name : HashTable.separateChaining.impl;
  * File name : HashTableSeparateChainingImpl;
@@ -6,6 +7,7 @@
  */
 
 import separateChaining.HashNode;
+import separateChaining.IHashTable;
 
 /**
  * Time complexity:O();
