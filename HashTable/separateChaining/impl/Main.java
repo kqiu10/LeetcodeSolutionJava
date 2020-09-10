@@ -1,4 +1,4 @@
-package separateChaining.impl;
+package HashTable.separateChaining
 /**
  * Package Name : separateChaining.impl;
  * File name : MAIN;
@@ -7,6 +7,7 @@ package separateChaining.impl;
  */
 
 import IHashTable;
+import separateChaining.impl.HashTableSeparateChainingImpl;
 
 /**
  * Time complexity:O();
