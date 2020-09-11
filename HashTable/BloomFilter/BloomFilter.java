@@ -47,4 +47,23 @@ public class BloomFilter {
         }
     }
 
+    public boolean contains(String value) {
+        if (value == null) {
+            return false;
+        }
+        boolean res = true;
+        for (HashFunction function : functions) {
+            res = res & bits.get(function.hash(value));
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        String value = "cspiration";
+        BloomFilter filter = new BloomFilter();
+        System.out.println(filter.contains(value));
+        filter.add(value);
+        System.out.println(filter.contains(value));
+    }
+
 }

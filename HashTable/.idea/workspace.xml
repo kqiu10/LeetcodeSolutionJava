@@ -59,7 +59,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.BloomFilter">
+    <configuration name="BloomFilter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BloomFilter.BloomFilter" />
+      <module name="HashTable" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BloomFilter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="openAddressing.Main" />
       <module name="HashTable" />
@@ -101,6 +114,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.BloomFilter" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
       </list>
@@ -115,7 +129,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599754581013</updated>
       <workItem from="1599754582725" duration="1819000" />
-      <workItem from="1599763159433" duration="5203000" />
+      <workItem from="1599763159433" duration="5920000" />
     </task>
     <servers />
   </component>
