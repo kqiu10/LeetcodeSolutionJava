@@ -23,12 +23,18 @@ public class MaxHeapImpl<E extends Comparable<E>> implements IMaxHeap<E> {
         this.data = data;
         this.size = 0;
         this.capacity = data.length;
+        heapify(data);
     }
 
     public MaxHeapImpl() {
         this.capacity = 16;
         this.size = 0;
         this.data = (E[]) new Comparable[capacity];
+    }
+    private void heapify(E[] data) {
+        for (int i = getParentIndex(size - 1); i >= 0; i--) {
+            siftDownHeapify(i);
+        }
     }
 
     @Override
@@ -134,6 +140,21 @@ public class MaxHeapImpl<E extends Comparable<E>> implements IMaxHeap<E> {
 
     private void siftDown() {
         int index = 0;
+        while (getLeftChildIndex(index) < size) {
+            int biggerChildIndex = getLeftChildIndex(index);
+            if (getRightChildIndex(index) < size && rightChild(index).compareTo(leftChild(index)) > 0) {
+                biggerChildIndex = getRightChildIndex(index);
+            }
+            if (data[index].compareTo(data[biggerChildIndex]) > 0) {
+                break;
+            } else {
+                swap(index, biggerChildIndex);
+                index = biggerChildIndex;
+            }
+        }
+    }
+
+    private void siftDownHeapify(int index) {
         while (getLeftChildIndex(index) < size) {
             int biggerChildIndex = getLeftChildIndex(index);
             if (getRightChildIndex(index) < size && rightChild(index).compareTo(leftChild(index)) > 0) {
