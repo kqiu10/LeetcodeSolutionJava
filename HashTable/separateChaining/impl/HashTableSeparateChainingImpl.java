@@ -111,7 +111,7 @@ public class HashTableSeparateChainingImpl<K, V> implements IHashTable<K, V> {
         for (HashNode<K, V> hashNode : hashNodes) {
             if (hashNode != null) {
                 while (hashNode != null) {
-                    System.out.println("key : " + hashNode.key + " value : " + hashNode.value + " -> ");
+                    System.out.print("key : " + hashNode.key + " value : " + hashNode.value + " -> ");
                     hashNode = hashNode.next;
                 }
                 System.out.println(" null");
