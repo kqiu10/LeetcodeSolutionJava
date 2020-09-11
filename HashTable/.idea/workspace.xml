@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ce2aeb1d-9707-4af2-a64d-e205fa047dd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/separateChaining/impl/HashTableSeparateChainingImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/separateChaining/impl/HashTableSeparateChainingImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeetCode(Name+No.)/leetcode/图形/_469_ConvexPolygon.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode(Name+No.)/leetcode/图形/_469_ConvexPolygon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode(Name+No.)/leetcode/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode(Name+No.)/leetcode/leetcode.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
