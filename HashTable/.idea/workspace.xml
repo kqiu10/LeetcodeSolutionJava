@@ -21,7 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce2aeb1d-9707-4af2-a64d-e205fa047dd8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../LeetCode(Name+No.)/leetcode/leetcode.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../LeetCode(Name+No.)/leetcode/leetcode.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +115,7 @@
       <option name="presentableId" value="Default" />
       <updated>1599754581013</updated>
       <workItem from="1599754582725" duration="1819000" />
-      <workItem from="1599763159433" duration="3511000" />
+      <workItem from="1599763159433" duration="5203000" />
     </task>
     <servers />
   </component>
@@ -136,10 +135,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1599763324047">
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser" timestamp="1599793197756">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1599763324047" />
+    <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1599793197756" />
     <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1599765935409">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
