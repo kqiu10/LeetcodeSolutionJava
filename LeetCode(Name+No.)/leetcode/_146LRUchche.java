@@ -103,11 +103,12 @@ public  class _146LRUchche {
                     node.pre.next = node.next;
                     node.next.pre = node.pre;
                 }
+
+                tail.next = node;
+                node.pre = tail;
+                node.next = null;
+                tail = node;
             }
-            tail.next = node;
-            node.pre = tail;
-            node.next = null;
-            tail = node;
         } else {
             Node newNode = new Node(key, value);
             if (capacity == 0) {
