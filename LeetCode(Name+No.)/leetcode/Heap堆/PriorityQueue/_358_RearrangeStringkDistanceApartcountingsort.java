@@ -1,4 +1,4 @@
-package leetcode.数组;
+package Heap堆.PriorityQueue;
 /**
  * Package Name : leetcode.数组;
  * File name : _358_RearrangeStringkDistanceApartcountingsort;
