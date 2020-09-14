@@ -28,7 +28,8 @@ public class Square {
             Point node1 = list.get(i);
             for (int j = i + 1; j < list.size(); j++) {
                 Point node2 = list.get(j);
-                if (Math.abs(node1.x - node2.x) != Math.abs(node1.y - node2.y) || node1.equals(node2)) continue;
+                if (Math.abs(node1.x - node2.x) != Math.abs(node1.y - node2.y) //长方形 : 去掉这一行
+                        || node1.equals(node2)) continue;
                 Point left = new Point(node2.x, node1.y);
                 Point right = new Point(node1.x, node2.y);
                 if (set.contains(left) && set.contains(right)) {
