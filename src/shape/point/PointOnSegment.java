@@ -18,13 +18,15 @@ public class PointOnSegment {
             return true;
         }
         return false;
-
     }
+
+
     public boolean pointOnSegment(Point C, Point A, Point B) {
         Point AC = new Point(C.x - A.x, C.y - A.y);
         Point BC = new Point(C.x - B.x, C.y - B.y);
         int res = AC.x * BC.y - AC.y * BC.x;
         return res == 0 && onSegment(A, B, C);
-
     }
+
+
 }
