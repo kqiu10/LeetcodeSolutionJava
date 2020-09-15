@@ -22,8 +22,8 @@ package leetcode.BackTracking回溯法.规律;
  * 3,2,1 → 1,2,3
  * 1,1,5 → 1,5,1
  *
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1);
  * Description:
  *    // 1   2   7   4   3   1
  *           ^
@@ -35,4 +35,43 @@ package leetcode.BackTracking回溯法.规律;
  *               ^   ^   ^   ^
  */
 public class _31_NextPermutation {
+    public void nextPermutation(int[] nums) {
+        if (nums == null || nums.length == 0) return;
+
+        int firstSmall = -1;
+        for (int i = nums.length - 2; i >= 0; i--) {
+            if (nums[i] < nums[i + 1]) {
+                firstSmall = i;
+                break;
+            }
+        }
+
+        if (firstSmall == -1) {
+            reverse(nums, 0, nums.length - 1);
+            return;
+        }
+        int firstLarge = -1;
+        for (int i = nums.length - 1; i > firstSmall; i--) {
+            if (nums[i] > nums[firstSmall]) {
+                firstLarge = i;
+                break;
+            }
+        }
+        swap(nums, firstSmall, firstLarge);
+        reverse(nums, firstSmall + 1, nums.length - 1);
+        return;
+
+    }
+
+    private void swap(int[] nums, int a, int b) {
+        int temp = nums[a];
+        nums[a++] = nums[b];
+        nums[b--] = temp;
+    }
+
+    private void reverse(int[] nums, int a, int b) {
+        while (a < b) {
+            swap(nums, a++, b--);
+        }
+    }
 }
