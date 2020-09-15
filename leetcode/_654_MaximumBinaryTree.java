@@ -1,6 +1,6 @@
-/**
+package leetcode; /**
  * Package Name : PACKAGE_NAME;
- * File name : _654_MaximumBinaryTree;
+ * File name : leetcode._654_MaximumBinaryTree;
  * Creator: Kane;
  * Date: 9/15/20
  */
