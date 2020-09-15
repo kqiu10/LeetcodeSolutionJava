@@ -1,6 +1,6 @@
-package leetcode.BackTracking回溯法; /**
+package leetcode.BackTracking回溯法.排列; /**
  * Package Name : PACKAGE_NAME;
- * File name : leetcode.BackTracking回溯法._46_Permutations;
+ * File name : leetcode.BackTracking回溯法.排列._46_Permutations;
  * Creator: Kane;
  * Date: 9/14/20
  */

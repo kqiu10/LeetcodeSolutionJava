@@ -1,4 +1,4 @@
-package leetcode.BackTracking回溯法;
+package leetcode.BackTracking回溯法.排列;
 /**
  * Package Name : leetcode.BackTracking回溯法;
  * File name : _47_PermutationsII;
