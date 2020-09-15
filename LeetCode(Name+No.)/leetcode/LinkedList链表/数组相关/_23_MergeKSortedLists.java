@@ -13,7 +13,7 @@ import java.util.PriorityQueue;
  * Space complexity: O(n);
  * Description: PriorityQueue;
  */
-public class _23_MergekSortedLists {
+public class _23_MergeKSortedLists {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
         PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.length, (a, b) -> a.val - b.val);
@@ -33,6 +33,23 @@ public class _23_MergekSortedLists {
         }
             return dummy.next;
     }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }
 
 /**
@@ -40,7 +57,7 @@ public class _23_MergekSortedLists {
  * Space complexity: O(n);
  * Description: Divide and Conquer;
  */
-class MergekSortedListsII {
+class MergeKSortedListsII {
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
         return sort(lists, 0, lists.length - 1);
@@ -62,5 +79,23 @@ class MergekSortedListsII {
         l2.next = merge(l1, l2.next);
         return l2;
      }
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }
+
+
 

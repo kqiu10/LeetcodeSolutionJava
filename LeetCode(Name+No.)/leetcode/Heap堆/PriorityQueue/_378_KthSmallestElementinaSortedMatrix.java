@@ -1,4 +1,4 @@
-package Heap堆.PriorityQueue;
+package leetcode.Heap堆.PriorityQueue;
 /**
  * Package Name : BinarySearch二分查找.二维数组;
  * File name : KthSmallestElementinaSortedMatrix;

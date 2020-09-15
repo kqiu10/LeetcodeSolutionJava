@@ -1,4 +1,4 @@
-package Heap堆.PriorityQueue;
+package leetcode.Heap堆.PriorityQueue;
 /**
  * Package Name : LinkedList链表.数组相关;
  * File name : _23_MergekSortedLists;
@@ -35,6 +35,23 @@ public class _23_MergekSortedLists {
         }
             return dummy.next;
     }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }
 
 /**
@@ -64,5 +81,23 @@ class MergekSortedListsII {
         l2.next = merge(l1, l2.next);
         return l2;
      }
+
+    class ListNode {
+        int val;
+        ListNode next;
+
+        ListNode() {
+        }
+
+        ListNode(int val) {
+            this.val = val;
+        }
+
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
 }
+
 
