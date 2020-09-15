@@ -73,7 +73,7 @@ class PermutationII {
             res.add(new ArrayList<>(list));
             return;
         }
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = start; i < nums.length; i++) {
            swap(nums, start, i);
            helper2(res, start + 1, nums);
            swap(nums, start, i);
