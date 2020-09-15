@@ -6,8 +6,6 @@ package leetcode.Heap堆.PriorityQueue;
  * Date: 8/19/20
  */
 
-
-
 import java.util.PriorityQueue;
 
 /**
@@ -35,7 +33,6 @@ public class _23_MergekSortedLists {
         }
             return dummy.next;
     }
-
     class ListNode {
         int val;
         ListNode next;
@@ -52,6 +49,8 @@ public class _23_MergekSortedLists {
             this.next = next;
         }
     }
+
+
 }
 
 /**

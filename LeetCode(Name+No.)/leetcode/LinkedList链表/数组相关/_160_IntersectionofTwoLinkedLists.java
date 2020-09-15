@@ -5,7 +5,7 @@ package LinkedList链表.数组相关;
  * Creator: Kane;
  * Date: 8/19/20
  */
-
+import LinkedList链表.数组相关.ListNode;
 /**
  * Time complexity:O(m + n);
  * Space complexity: O(1);
