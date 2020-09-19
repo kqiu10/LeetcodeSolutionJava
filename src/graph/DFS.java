@@ -37,6 +37,29 @@ public class DFS {
         }
     }
 
+    /**
+     * dfs with matrix
+     */
+    public static void dfsMatrix(int[][] matrix) {
+        int[] visited = new int[matrix.length];
+        for (int i = 0; i < visited.length; i++) {
+            if (visited[i] == 0) {
+                helper(matrix, visited, i);
+            }
+        }
+    }
+
+    private static void helper(int[][] matrix, int[] visited, int vertex) {
+        visited[vertex] = 1;
+        for (int i = 0; i < matrix.length; i++) {
+            if (matrix[vertex][i] == 1) {
+                if (visited[i] == 0) {
+                    helper(matrix, visited, i);
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         GraphNode a = new GraphNode(0);
         GraphNode b = new GraphNode(1);
