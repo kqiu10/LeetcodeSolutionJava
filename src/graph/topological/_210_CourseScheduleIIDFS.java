@@ -39,7 +39,7 @@ import java.util.*;
  * Space complexity: O(V);
  * Description: TODO
  */
-public class _210_CourseScheduleII {
+public class _210_CourseScheduleIIDFS {
     public int[] findOrder(int numCourses, int[][] prerequisites) {
         /**
          * 预处理
@@ -99,4 +99,5 @@ public class _210_CourseScheduleII {
         res.add(index);
         return true;
     }
+
 }

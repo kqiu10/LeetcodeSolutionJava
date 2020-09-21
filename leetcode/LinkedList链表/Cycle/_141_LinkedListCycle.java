@@ -5,7 +5,7 @@ package LinkedList链表.Cycle;
  * Creator: Kane;
  * Date: 8/18/20
  */
-
+import LinkedList链表.Cycle.ListNode;
 /**
  * Time complexity:O(n);
  * Space complexity: O(1);
@@ -22,6 +22,5 @@ public class _141_LinkedListCycle {
             if (slow == fast) return true;
         }
         return false;
-
     }
 }

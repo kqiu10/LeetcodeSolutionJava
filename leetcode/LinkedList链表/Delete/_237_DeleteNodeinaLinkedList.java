@@ -5,7 +5,7 @@ package LinkedList链表.Delete;
  * Creator: Kane;
  * Date: 8/18/20
  */
-
+import LinkedList链表.Delete.ListNode;
 /**
  * Time complexity:O();
  * Space complexity: O();

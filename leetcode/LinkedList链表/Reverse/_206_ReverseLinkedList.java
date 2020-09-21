@@ -6,7 +6,7 @@ package LinkedList链表.Reverse;
  * Date: 8/16/20
  */
 
-
+import LinkedList链表.Reverse.ListNode;
 /**
  * Time complexity:O(n);
  * Space complexity: O(1);
