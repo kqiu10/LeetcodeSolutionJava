@@ -11,7 +11,7 @@ import src.unionFind.IUnionFind;
  * Space complexity: O();
  * Description: TODO
  */
-public class QuickUnionImpl implements IUnionFind {
+public class UnionByWeightImpl implements IUnionFind {
     /**
      * 节点个数
      */
@@ -27,7 +27,7 @@ public class QuickUnionImpl implements IUnionFind {
     private int[] parent;
 
 
-    public QuickUnionImpl(int count) {
+    public UnionByWeightImpl(int count) {
         this.count = count;
         parent = new int[count];
         this.size = new int[count];
