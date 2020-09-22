@@ -33,7 +33,7 @@ package src.unionFind.leetcode;
  */
 public class _323_NumberofConnectedComponentsinanUndirectedGraphFinal {
 
-    public static   int countComponents(int n, int[][] edges) {
+    public static int countComponents(int n, int[][] edges) {
         int res = n;
         int[] parents = new int[n];
         for (int i = 0; i < parents.length; i++) {
