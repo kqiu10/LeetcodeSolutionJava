@@ -38,7 +38,7 @@ package leetcode.Graph图.BFS;
 import java.util.*;
 
 /**
- * Time complexity:O(n^2);
+ * Time complexity:O(n);
  * Space complexity: O(n);
  * Description: TODO
  */
