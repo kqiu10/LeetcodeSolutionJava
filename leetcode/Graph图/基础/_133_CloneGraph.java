@@ -1,4 +1,4 @@
-package leetcode.Graph图;
+package leetcode.Graph图.基础;
 /**
  * Date: 9/18/20
  * Question Description
@@ -51,10 +51,77 @@ package leetcode.Graph图;
  * Output: [[2],[1]]
  */
 
+
+import leetcode.Graph图.Node;
+
+import java.util.*;
+
 /**
  * Time complexity:O();
  * Space complexity: O();
  * Description: TODO
  */
 public class _133_CloneGraph {
+
+    HashMap<Node, Node> map = new HashMap<>();
+
+    /**
+     * DFS
+     * @param node
+     * @return
+     */
+    public Node cloneGraphDFS(Node node) {
+        return helperDFS(node);
+    }
+    public Node helperDFS(Node node) {
+        if (node == null) return null;
+        if (map.containsKey(node)) {
+            return map.get(node);
+        }
+        Node dup = new Node(node.val);
+        map.put(node, dup);
+        for (Node neighbor : node.neighbors) {
+            Node clone = helperDFS(neighbor);
+            dup.neighbors.add(clone);
+        }
+        return dup;
+    }
+    /**
+     * BFS
+     */
+    public Node cloneGraphBFS(Node node) {
+        if (node == null) return null;
+        List<Node> nodes = getNodes(node);
+        HashMap<Node, Node> map = new HashMap<>();
+
+        for (Node cur : nodes) {
+            map.put(cur, new Node(cur.val));
+        }
+        for (Node cur : nodes) {
+            Node newNode = map.get(cur);
+            for (Node neighbor : newNode.neighbors) {
+                newNode.neighbors.add(map.get(neighbor));
+            }
+        }
+        return map.get(node);
+
+    }
+
+    private List<Node> getNodes(Node node) {
+        Queue<Node> queue = new LinkedList<>();
+        HashSet<Node> set = new HashSet<>();
+        queue.offer(node);
+        set.add(node);
+
+        while (!queue.isEmpty()) {
+            Node cur = queue.poll();
+            for (Node neighbor : cur.neighbors) {
+                if (!set.contains(neighbor)) {
+                    queue.offer(neighbor);
+                }
+
+            }
+        }
+        return new ArrayList<>(set);
+    }
 }
