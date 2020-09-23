@@ -21,75 +21,20 @@ package leetcode.Graph图.DFS;
  */
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
-
-/**
- * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
-
- */
-class NestedInteger {
-    Integer value;
-    List<NestedInteger> list;
-
-    NestedInteger() {
-        value = new Integer(0);
-        list = new ArrayList<>();
-    }
+import java.util.Queue;
 
 
 
-     // Constructor initializes a single integer.
-
-    NestedInteger(int value){
-        this.value = value;
-     };
-
-    NestedInteger(Integer value, List<NestedInteger> list) {
-        this.value = value;
-        this.list = list;
-    }
-    // @return true if this NestedInteger holds a single integer, rather than a nested list.
-
-     public boolean isInteger(){
-        return value != null;
-     };
-     // @return the single integer that this NestedInteger holds, if it holds a single integer
-
-     // Return null if this NestedInteger holds a nested list
-
-     public Integer getInteger() {
-         return value;
-     };
-     // Set this NestedInteger to hold a single integer.
-
-    //     public void setInteger(int value) {
-    //     };
-    // Set this NestedInteger to hold a nested list and adds a nested integer to it.
-
-    //     public void add(NestedInteger ni) {};
 
 
-
-     // @return the nested list that this NestedInteger holds, if it holds a nested list
-
-     // Return null if this NestedInteger holds a single integer
-
-     public List<NestedInteger> getList(){
-             return list;
-     };
-     public Integer next() {
-         return value;
-     }
-     public boolean hasNext() {
-         return true;
-     }
-
-
-
-}
 public class _339_NestedListWeightSum {
+    /**
+     * Description: TODO
+     * Time complexity:O(n);
+     * Space complexity: O(n);
+     */
     //DFS
     public int depthSum(List<NestedInteger> nestedList) {
         if (nestedList == null || nestedList.size() == 0) {
@@ -107,5 +52,86 @@ public class _339_NestedListWeightSum {
             }
         }
         return res;
+    }
+    /**
+     * Description: TODO
+     * Time complexity:O(n);
+     * Space complexity: O(n);
+     */
+
+    //BFS
+    public int depthSumII(List<NestedInteger> nestedList) {
+        if (nestedList == null || nestedList.size() == 0) {
+            return 0;
+        }
+        int depth = 1;
+        int res = 0;
+        Queue<NestedInteger> queue = new LinkedList<>(nestedList);
+        while (!queue.isEmpty()) {
+            int size = queue.size();
+            for (int i = 0; i < size; i++) {
+                NestedInteger cur = queue.poll();
+                if (cur.isInteger()) {
+                    res += cur.getInteger() * depth;
+                } else {
+                    queue.addAll(cur.getList());
+                }
+            }
+            depth++;
+        }
+        return res;
+    }
+}
+
+
+class NestedInteger {
+    Integer value;
+    List<NestedInteger> list;
+
+    NestedInteger() {
+        value = new Integer(0);
+        list = new ArrayList<>();
+    }
+    // Constructor initializes a single integer.
+
+    NestedInteger(int value) {
+        this.value = value;
+    }
+
+    ;
+
+    NestedInteger(Integer value, List<NestedInteger> list) {
+        this.value = value;
+        this.list = list;
+    }
+    // @return true if this NestedInteger holds a single integer, rather than a nested list.
+
+    public boolean isInteger() {
+        return value != null;
+    }
+
+    ;
+    // @return the single integer that this NestedInteger holds, if it holds a single integer
+
+    // Return null if this NestedInteger holds a nested list
+
+    public Integer getInteger() {
+        return value;
+    }
+
+    ;
+
+    public List<NestedInteger> getList() {
+        return list;
+    }
+
+    ;
+
+    public Integer next() {
+        return value;
+    }
+
+    public boolean hasNext() {
+        return true;
     }
 }
