@@ -44,7 +44,7 @@ import java.util.Queue;
  *    2 : 2
  *    3 : 0
  *    4 : 0
- *    queue 
+ *    queue
  *    pre : 0
  *    res = 3
  */
