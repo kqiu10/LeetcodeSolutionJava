@@ -92,7 +92,20 @@ class NestedInteger {
 public class _339_NestedListWeightSum {
     //DFS
     public int depthSum(List<NestedInteger> nestedList) {
-        return 0;
-
+        if (nestedList == null || nestedList.size() == 0) {
+            return 0;
+        }
+        return helper(nestedList, 1);
+    }
+    private int helper(List<NestedInteger> nestedList, int depth) {
+        int res = 0;
+        for (NestedInteger nest : nestedList) {
+            if (nest.isInteger()) {
+                res += (nest.getInteger() * depth);
+            } else {
+                res += helper(nest.getList(), depth + 1);
+            }
+        }
+        return res;
     }
 }
