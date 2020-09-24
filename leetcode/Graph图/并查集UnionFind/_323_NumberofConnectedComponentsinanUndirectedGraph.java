@@ -1,4 +1,4 @@
-package leetcode.Graph图.并查集;
+package leetcode.Graph图.并查集UnionFind;
 /**
  * Date: 9/21/20
  * Question Description
