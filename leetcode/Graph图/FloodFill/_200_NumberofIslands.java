@@ -30,13 +30,13 @@ package leetcode.Graph图.FloodFill;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(m * n); m == row, n == col
+ * Space complexity: O(n);
 
  */
 public class _200_NumberofIslands {
-    int[][] dirs = new int[][]{{0, -1}, {0, 1}, {1, 0}, {-1, 0}};
-    public int numIslands(char[][] grid) {
+    static int[][] dirs = new int[][]{{0, -1}, {0, 1}, {1, 0}, {-1, 0}};
+    public static int numIslands(char[][] grid) {
         int res = 0;
         if (grid == null || grid.length == 0) return res;
         for (int i = 0; i < grid.length; i++) {
@@ -49,12 +49,18 @@ public class _200_NumberofIslands {
         }
         return res;
     }
-    private void helper(char[][] grid, int i, int j) {
+    private static void helper(char[][] grid, int i, int j) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == '0') return;
         for (int[] dir : dirs) {
             int x = i + dir[0];
             int y = j + dir[1];
-            if (x < 0 || y >= grid.length || x < 0 || y >= grid[0].length || grid[x][y] == '0') return;
+            if (x < 0 || y >= grid.length || y < 0 || y >= grid[0].length || grid[x][y] == '0') continue;
             grid[x][y] = '0';
+            helper(grid,x, y);
         }
+    }
+
+    public static void main(String[] args) {
+        numIslands(new char[][]{{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}});
     }
 }
