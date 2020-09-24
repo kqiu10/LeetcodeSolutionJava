@@ -60,8 +60,8 @@ public class _490_TheMaze {
                 int newX = cur.x;
                 int newY = cur.y;
                 while (isValid(maze, newX + dir[0], newY + dir[1])) {
-                    newX += cur.x;
-                    newY += cur.y;
+                    newX += dir[0];
+                    newY += dir[1];
                 }
                 if (!visited[newX][newY]) {
                     queue.offer(new Point(newX, newY));
