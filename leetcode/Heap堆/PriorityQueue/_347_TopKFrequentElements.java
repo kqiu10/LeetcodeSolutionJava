@@ -76,7 +76,7 @@ class topKFrequentII{
         }
         PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) ->(b.getValue() - a.getValue()));
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            maxHeap .add(entry);
+            maxHeap.add(entry);
         }
         List<Integer> res = new ArrayList<>();
         while (res.size() < k) {
