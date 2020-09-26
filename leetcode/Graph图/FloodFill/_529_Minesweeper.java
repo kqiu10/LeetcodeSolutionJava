@@ -56,12 +56,51 @@ package leetcode.Graph图.FloodFill;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(row * col);
+ * Space complexity: O(1);
 
  */
 public class _529_Minesweeper {
     public char[][] updateBoard(char[][] board, int[] click) {
+        int x = click[0];
+        int y = click[1];
+        if (board[x][y] == 'M') {
+            board[x][y] = 'X';
+            return board;
+        }
+        dfs(board, x, y);
+        return board;
+    }
 
+    private void dfs(char[][] board, int x, int y) {
+        if (x < 0 || x >= board.length || y < 0 || y >= board[0].length || board[x][y] != 'E') return;
+        int mineNum = findMine(board, x, y);
+        if (mineNum == 0) {
+            board[x][y] = 'B';
+            for (int i = -1; i <= 1; i++) {
+                for (int j = -1; j <= 1; j++) {
+                    dfs(board, x + i, y + i);
+                }
+            }
+        }
+        board[x][y] = (char)('0' + mineNum);
+    }
+
+    private int findMine(char[][] board, int x, int y) {
+        int count = 0;
+        for (int i = -1; i <= 1; i++) {
+            for (int j = -1; j <= 1; j++) {
+                int newX = x + i;
+                int newY = y + j;
+
+                if (newX < 0 || newY >= board.length || newY < 0 || newY >= board[0].length ) continue;
+
+                if (board[newX][newY] == 'M') {
+                    count++;
+                }
+
+            }
+        }
+        return count;
     }
 }
