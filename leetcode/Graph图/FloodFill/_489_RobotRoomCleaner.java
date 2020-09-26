@@ -49,34 +49,50 @@ import java.util.HashSet;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(unknown);
+ * Space complexity: O(unknown);
 
  */
 public class _489_RobotRoomCleaner {
-    int[][] dirs = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
     public void cleanRoom(Robot robot) {
-        backtracking(robot, 0, 0, 0, new HashSet<>());
+        HashSet<String> cleaned = new HashSet(); // already cleaned cells
+        //we will do DFS and mark accessible and uncleaned cells as cleaned by putting to cleaned set
+        //use relative position from the initial position which can be assumed (0,0) and given north facing
+        //BFS might make the robot move more
+        dfs(0, 0, robot, cleaned, 0);    //dir 0=north, 1=east, 2=south, 3=west
+
     }
 
-    private void backtracking(Robot robot, int x, int y, int curDir, HashSet<String> visited) {
-        if (visited.contains(x + "-" + y)) {return;}
-
-        visited.add(x + "-" + y);
+    private void dfs(int i, int j, Robot robot, HashSet<String> cleaned, int dir) {
+        if (cleaned.contains(i + "," + j)) {
+            return;
+        }
         robot.clean();
-        for (int i = 0; i < 4; i++) {
-            int nextDir = (curDir + i) % 4;
-            int newX = x + dirs[nextDir][0];
-            int newY = y + dirs[nextDir][1];
-            if (!visited.contains(newX + "-" + newY) && robot.move()) {
-                backtracking(robot, newX, newY, nextDir, visited);
+        cleaned.add(i + "," + j);
+
+        for (int d = 0; d < 4; d++) {     //tilt robot in all 4 dir
+            robot.turnRight();
+            dir++;
+            dir %= 4;
+
+            //create new coordinates, for new move in updated dir
+
+            int x = i, y = j;   // preserve original i,j and create new x,y for current move
+            if (dir == 0) x--;     //if new dir is north, then reduce row index
+            else if (dir == 1) y++;//if new dir is east, then incr col index
+            else if (dir == 2) x++;//if new dir is south, then incr row index
+            else y--;           //if new dir is west, then reduce col index
+
+            if (!cleaned.contains(x + "," + y) && robot.move()) {
+                dfs(x, y, robot, cleaned, dir);
+
+                //revert robot's position and direction using right -> right -> move -> right -> right (just like in standard backtrack we revert state)
+                robot.turnRight();
+                robot.turnRight();
+                robot.move();
+                robot.turnRight();
                 robot.turnRight();
             }
-            robot.turnRight();
-            robot.turnRight();
-            robot.move();
-            robot.turnRight();
-            robot.turnRight();
         }
     }
 
