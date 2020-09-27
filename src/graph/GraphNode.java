@@ -15,14 +15,14 @@ import java.util.List;
 public class GraphNode {
     int label;
 
-    public GraphNode() {
-    }
-
     List<GraphNode> neighbors;
 
     public GraphNode(int label) {
         this.label = label;
         neighbors = new ArrayList<>();
 
+    }
+    public List<GraphNode> getNeighbors(){
+        return neighbors;
     }
 }
