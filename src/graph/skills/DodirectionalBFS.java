@@ -16,9 +16,9 @@ import java.util.Queue;
  * Space complexity: O();
 
  */
-public class BidirectionalBFS {
+public class DodirectionalBFS {
 
-    public int BidirectionalBFS(GraphNode start, GraphNode end) {
+    public int DodirectionalBFS(GraphNode start, GraphNode end) {
         Queue<GraphNode> startQueue = new LinkedList<>();
         HashSet<GraphNode> startVisited = new HashSet<>();
         startQueue.offer(start);
