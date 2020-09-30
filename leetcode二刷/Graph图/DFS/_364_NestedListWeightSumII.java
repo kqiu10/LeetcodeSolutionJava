@@ -1,4 +1,4 @@
-package leetcode.Graph图.DFS;
+package leetcode二刷.Graph图.DFS;
 /**
  * Date: 9/23/20
  * Question Description
@@ -34,23 +34,23 @@ import java.util.List;
  * Space complexity: O(n);
 
  */
-public class _364_NestedListWeightSumII {
-    public int depthSumInverse(List<NestedInteger> nestedList) {
-        if (nestedList == null) return 0;
-
-        return helper(nestedList, 0);
-    }
-
-    private int helper(List<NestedInteger> nestedList, int res) {
-        List<NestedInteger> nextList = new ArrayList<>();
-        for (NestedInteger list : nestedList) {
-            if (list.isInteger()) {
-                res += list.getInteger();
-            } else {
-                nextList.addAll(list.getList());
-            }
-        }
-        res += nextList.isEmpty() ? helper(nextList, res) : 0;
-        return res;
-    }
-}
+//public class _364_NestedListWeightSumII {
+//    public int depthSumInverse(List<NestedInteger> nestedList) {
+//        if (nestedList == null) return 0;
+//
+//        return helper(nestedList, 0);
+//    }
+//
+//    private int helper(List<NestedInteger> nestedList, int res) {
+//        List<NestedInteger> nextList = new ArrayList<>();
+//        for (NestedInteger list : nestedList) {
+//            if (list.isInteger()) {
+//                res += list.getInteger();
+//            } else {
+//                nextList.addAll(list.getList());
+//            }
+//        }
+//        res += nextList.isEmpty() ? helper(nextList, res) : 0;
+//        return res;
+//    }
+//}
