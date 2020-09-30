@@ -1,4 +1,4 @@
-package leetcode.BitWise位运算;
+package leetcode二刷.BitWise位运算;
 /**
  * Description: TODO
  * Package Name : leetcode.BitWise;
@@ -12,7 +12,7 @@ package leetcode.BitWise位运算;
  * Space complexity: O(n);
  *  convert string to int to compare
  *  val |= 1 << (words[i].charAt(j) - 'a');
- *  |= 等于 +=
+ *  operator ( | ) returns a 1 in each bit position for which the corresponding bits of either or both operands are 1 s
  *  "abc"
  *  a : 1 << 0 00001 = 1
  *  b : 1 << 1 00010 = 2
@@ -20,14 +20,14 @@ package leetcode.BitWise位运算;
  *  abc = 1 + 2 + 4 = 7
  */
 public class _318_MaximumProductOfWordLengths {
-    public int maxProduct(String[] words) {
+    public static int maxProduct(String[] words) {
         int val;
         int res = 0;
         int[] bytes = new int[words.length];
         for (int i = 0; i < bytes.length; i++) {
             val = 0;
             for (int j = 0; j < words[i].length(); j++) {
-                val |= 1 << (words[i].charAt(j) - 'a');
+                val |= (1 << (words[i].charAt(j) - 'a'));
             }
             bytes[i] = val;
         }
@@ -41,5 +41,9 @@ public class _318_MaximumProductOfWordLengths {
         return res;
 
 
+    }
+
+    public static void main(String[] args) {
+        maxProduct(new String[]{"a", "aa", "abc"});
     }
 }
