@@ -51,6 +51,7 @@ public class _258_AddDigits {
  * Space complexity: O(1);
  */
 class AddDigitsII {
+
     public int addDigits(int num) {
         int res = 0;
         while (num > 0) {

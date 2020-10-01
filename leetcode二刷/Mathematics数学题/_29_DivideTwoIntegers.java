@@ -1,4 +1,4 @@
-package leetcode.Mathmatics数学题;
+package leetcode二刷.Mathmatics数学题;
 /**
  * Description: TODO
  * Package Name : leetcode.Mathmatics数学题;
@@ -47,11 +47,10 @@ public class _29_DivideTwoIntegers {
         }
         long Lres = divide(Ldivided, Ldivisor);
         int res = 0;
-        if (Lres >= Integer.MAX_VALUE) {
-            res = (sign == 1) ? Integer.MAX_VALUE : Integer.MIN_VALUE;
-        } else {
-            res = (int)(sign * Lres);
+        if (Lres > Integer.MAX_VALUE) {
+            return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         }
+        res = (int)Lres * sign;
         return res;
     }
     public static long divide(long ldividend, long ldivisor) {
