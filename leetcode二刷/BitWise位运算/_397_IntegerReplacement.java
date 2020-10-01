@@ -35,7 +35,7 @@ public class _397_IntegerReplacement {
                 } else {
                     n--;
                 }
-
+    
             } res++;
 
         }return res;
