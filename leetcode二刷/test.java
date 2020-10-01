@@ -13,7 +13,10 @@ import java.util.List;
 
  */
 public class test {
+    public int reverse(int x) {
+        int sign = (x >= 0) ? 1 : -1;
 
+    }
     }
 
     public static void main(String[] args) {
