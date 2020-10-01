@@ -45,3 +45,23 @@ public class _258_AddDigits {
 
     }
 }
+
+/**
+ * Time complexity:O(logn);
+ * Space complexity: O(1);
+ */
+class AddDigitsII {
+    public int addDigits(int num) {
+        int res = 0;
+        while (num > 0) {
+            res += num % 10;
+            num /= 10;
+            if (num == 0 && res > 9) {
+                num = res;
+                res = 0;
+            }
+        }
+        return res;
+
+    }
+}
