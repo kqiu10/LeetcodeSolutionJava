@@ -12,28 +12,18 @@ import java.util.List;
  * Space complexity: O();
 
  */
-//public class test {
-//    public String addBinary(String a, String b) {
-//        StringBuilder sb = new StringBuilder();
-//        int len1 = a.length();
-//        int len2 = b.length();
-//        int reminder = 0;
-//        while (len1 != 0 || len2 != 0) {
-//            int sum = reminder;
-//            if (len1 >= 0) {
-//                res += (a.charAt(len1--) - '0');
-//            }
-//            if (len2 >= 0) {
-//                res += (a.charAt(len2--) - '0');
-//            }
-//            sb.append(sum % 2);
-//            reminder = sum / 2;
-//        }
-//        if (reminder != 0) {
-//            sb.append('1');
-//        }
-//        return sb.reverse().toString();
-//    }
-//}
-//
-//}
+public class test {
+    public double myPow(double x, int n) {
+        if (n > 0) return pow(x, n);
+        else return 1.0 / pow(x, n);
+    }
+    private double pow(double x, int n) {
+        if (x == 0) return 1;
+        double y = pow(x, n / 2);
+        if (n % 2 == 0) {
+            return y * y;
+        } else {
+            return y * y * x;
+        }
+    }
+}
