@@ -13,19 +13,27 @@ import java.util.List;
 
  */
 public class test {
-    public int[] plusOne(int[] digits) {
-        int sign = 0;
-        for (int i = digits.length - 1; i >= 0; i--) {
-            if (digits[i] < 9) {
-                digits[i]++;
-                return digits;
-            } else {
-                digits[i] = 0;
+    public String addBinary(String a, String b) {
+        StringBuilder sb = new StringBuilder();
+        int len1 = a.length();
+        int len2 = b.length();
+        int reminder = 0;
+        while (len1 != 0 || len2 != 0) {
+            int sum = reminder;
+            if (len1 >= 0) {
+                res += (a.charAt(len1--) - '0');
             }
+            if (len2 >= 0) {
+                res += (a.charAt(len2--) - '0');
+            }
+            sb.append(sum % 2);
+            reminder = sum / 2;
         }
-        int[] final = new int[digits.length + 1];
-        final[0] = 1;
-        return final;
+        if (reminder != 0) {
+            sb.append('1');
+        }
+        return sb.reverse().toString();
     }
+}
 
 }
