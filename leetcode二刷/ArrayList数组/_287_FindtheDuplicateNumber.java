@@ -66,3 +66,27 @@ class findDuplicateII{
         System.out.println(findDuplicate(new int[]{1,3,4,2,2}));
     }
 }
+/**
+ * Time complexity:O(n);
+ * Space complexity: O(1);
+ * Description: 自己想出的方法
+ */
+class findDuplicateIII {
+    public int findDuplicate(int[] nums) {
+        for (int i = 0; i < nums.length; i++) {
+            while (nums[i] != i + 1) {
+                if (nums[i] == nums[nums[i] - 1]) {
+                    return nums[i];
+                }
+                swap(nums, i, nums[i] - 1);
+            }
+        }
+        return -1;
+    }
+    private void swap(int[] nums, int a, int b) {
+        int temp = nums[a];
+        nums[a] = nums[b];
+        nums[b] = temp;
+
+    }
+}
