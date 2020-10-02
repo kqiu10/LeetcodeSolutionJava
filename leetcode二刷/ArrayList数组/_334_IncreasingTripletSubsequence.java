@@ -16,13 +16,13 @@ public class _334_IncreasingTripletSubsequence {
         if (nums.length < 3) {
             throw new IndexOutOfBoundsException();
         }
-        int min = Integer.MAX_VALUE, minSecond = Integer.MAX_VALUE;
-        for(int num : nums) {
-            if (num <= min) {
-                min = num;
-            } else if (num < minSecond) {
-                minSecond = num;
-            } else if (num > minSecond) {
+        int smallOne = Integer.MAX_VALUE, smallTwo = Integer.MAX_VALUE;
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] <= smallOne) {
+                smallOne = nums[i];
+            } else if (nums[i] <= smallTwo) {
+                smallTwo = nums[i];
+            } else {
                 return true;
             }
         }
