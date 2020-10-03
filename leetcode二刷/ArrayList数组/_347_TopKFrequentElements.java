@@ -76,34 +76,33 @@ class topKFrequentII{
         }
         PriorityQueue<Map.Entry<Integer, Integer>> maxHeap = new PriorityQueue<>((a, b) ->(b.getValue() - a.getValue()));
         for (Map.Entry<Integer, Integer> entry : map.entrySet()) {
-            maxHeap .add(entry);
+            maxHeap.offer(entry);
         }
         List<Integer> res = new ArrayList<>();
         while (res.size() < k) {
             Map.Entry<Integer,Integer> entry = maxHeap.poll();
             res.add(entry.getKey());
         }
-        int size = res.size();
-        int[] result = new int[size];
-        Integer[] temp = res.toArray(new Integer[size]);
-        for (int n = 0; n < size; n++) {
-            result[n] = temp[n];
+        int[] result = new int[k];
+        Integer[] temp = res.toArray(new Integer[k]);
+        for (int i = 0; i < temp.length; i++) {
+            result[i] = temp[i];
         }
         return result;
     }
 
 
-    /**
-     * Time complexity:O(nlogn);
-     * Space complexity: O(n);
-     * Description: TreeMap;
-     */
+
     public static void main(String[] args) {
         System.out.println(topKFrequent(new int[]{1, 1, 1, 2, 2, 3},2));
     }
 }
 
-
+/**
+ * Time complexity:O(nlogn);
+ * Space complexity: O(n);
+ * Description: TreeMap;
+ */
 
 class topKFrequentIII{
     public static int[] topKFrequent(int[] nums, int k) {
