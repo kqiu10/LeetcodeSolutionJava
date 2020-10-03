@@ -14,9 +14,6 @@ import java.util.List;
  */
 public class test {
     public int firstUniqChar(String s) {
-        int[] digits = new int[26];
-        for (char c : s.toCharArray()) {
-
-        }
+        
     }
 }
