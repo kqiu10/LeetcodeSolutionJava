@@ -12,7 +12,7 @@ import java.util.PriorityQueue;
 /**
  * Description: TODO
  * Time complexity:O(VlogV + ElogV);
- * Space complexity: O();
+ * Space complexity: O(max(V ,E));
 
  */
 public class Prim {
