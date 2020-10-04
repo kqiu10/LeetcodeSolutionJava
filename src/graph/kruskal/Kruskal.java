@@ -5,15 +5,50 @@ package graph.kruskal;
  */
 
 
+import src.unionFind.Impl.PathCompressionImpl;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.PriorityQueue;
+
 /**
  * Description: TODO
- * Time complexity:O();
+ * Time complexity:O(ElogE);
  * Space complexity: O();
 
  */
 public class Kruskal {
     public void KruskalMST(Graph graph) {
+        PriorityQueue<Edge> pq = new PriorityQueue<>((a, b) -> (a.weight - b.weight));
+        pq.addAll(graph.allEdges);
 
+        List<Edge> res = new ArrayList<>();
+        PathCompressionImpl unionFind = new PathCompressionImpl(graph.vertices);
+        int components = graph.vertices;
+
+        while (!pq.isEmpty()) {
+            if (components <= 1) {
+                break;
+            }
+            Edge edge = pq.poll();
+            if (unionFind.connected(edge.start, edge.end)) continue;
+            unionFind.union(edge.start, edge.end);
+            components--;
+            res.add(edge);
+        }
+        print(res);
+
+
+    }
+    public void print(List<Edge> list) {
+        int total = 0;
+        System.out.println("MST :");
+        for (int i = 0; i < list.size(); i++) {
+            System.out.println("Edge : " + list.get(i).start + "-" + list.get(i).end + " weight " + list.get(i).weight );
+            total += list.get(i).weight;
+
+        }
+        System.out.println("total is " + total);
     }
     public static void main(String[] args) {
         Graph graph = new Graph(6);

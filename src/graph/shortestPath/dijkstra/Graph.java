@@ -1,9 +1,8 @@
-package graph.prim;
+package graph.shortestPath.dijkstra;
 /**
  * Date: 10/3/20
  * Question Description
  */
-
 
 import java.util.ArrayList;
 import java.util.List;
