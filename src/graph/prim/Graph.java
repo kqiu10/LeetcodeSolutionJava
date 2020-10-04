@@ -1,4 +1,4 @@
-package graph.prime;
+package graph.prim;
 /**
  * Date: 10/3/20
  * Question Description
