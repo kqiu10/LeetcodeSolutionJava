@@ -4,13 +4,12 @@ package Tree.traversal;
  * Question Description
  */
 
-import com.sun.source.tree.Tree;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
 
 /**
+ * Description: TODO
  * Description:
  *                   3
  *               9       8
@@ -20,8 +19,8 @@ import java.util.Stack;
  * Space complexity: O();
 
  */
-public class Preorder {
-    public void preorder(TreeNode root) {
+public class Inorder {
+    public void inorder(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) {
             return;
@@ -31,30 +30,26 @@ public class Preorder {
     }
     private void helper(List<Integer> res, TreeNode root) {
         if (root == null) return;
-        res.add(root.val);
         helper(res, root.left);
+        res.add(root.val);
         helper(res, root.right);
     }
 
-    private void preorderIterate(TreeNode root) {
+    private void inorderIteration(TreeNode root) {
         List<Integer> res = new ArrayList<>();
-        if (root == null) {
-            return;
-        }
+        if (root == null) return;
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            TreeNode cur = stack.pop();
-            if (cur.right != null) {
-                stack.push(cur.right);
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
             }
-            if (cur.left != null) {
-                stack.push(cur.left);
-            }
+            cur = stack.pop();
             res.add(cur.val);
+            cur = cur.right;
         }
         print(res);
-
     }
     private void print(List<Integer> list) {
         for (int i = 0; i < list.size(); i++) {
@@ -82,9 +77,8 @@ public class Preorder {
         t2.right = t6;
         t3.left = t7;
         t3.right = t8;
-        Preorder preorder = new Preorder();
-        preorder.preorder(root);
-        preorder.preorderIterate(root);
+        Inorder inorder = new Inorder();
+        inorder.inorder(root);
+        inorder.inorderIteration(root);
     }
-
 }
