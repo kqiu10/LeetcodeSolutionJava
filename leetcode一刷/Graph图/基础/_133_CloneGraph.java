@@ -6,11 +6,11 @@ package leetcode.Graph图.基础;
  *
  * Return a deep copy (clone) of the graph.
  *
- * Each node in the graph contains a val (int) and a list (List[Node]) of its neighbors.
+ * Each node in the graph contains a val (int) and a list (List[Tree树.Node]) of its neighbors.
  *
- * class Node {
+ * class Tree树.Node {
  *     public int val;
- *     public List<Node> neighbors;
+ *     public List<Tree树.Node> neighbors;
  * }
  *
  *
@@ -52,7 +52,7 @@ package leetcode.Graph图.基础;
  */
 
 
-import leetcode.Graph图.Node;
+import leetcode一刷.Graph图.Node;
 
 import java.util.*;
 
