@@ -4,6 +4,8 @@ package Tree树;
  * Question Description
  */
 
+import java.util.List;
+
 /**
  * Description: TODO
  * Time complexity:O();
@@ -13,9 +15,7 @@ package Tree树;
 public class Node {
 
         public int val;
-        public Node left;
-        public Node right;
-        public Node next;
+        public List<Node> children;
 
         public Node() {}
 
@@ -23,10 +23,8 @@ public class Node {
             val = _val;
         }
 
-        public Node(int _val, Node _left, Node _right, Node _next) {
+        public Node(int _val, List<Node> _children) {
             val = _val;
-            left = _left;
-            right = _right;
-            next = _next;
+            children = _children;
         }
 }
