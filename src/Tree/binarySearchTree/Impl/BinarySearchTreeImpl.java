@@ -65,8 +65,10 @@ public class BinarySearchTreeImpl implements IBinarySearchTree {
             node.right = remove(node.right, val);
         } else {
             if (node.left == null) {
+                size--;
                 return node.right;
             } else if (node.right == null) {
+                size--;
                 return node.left;
             }
             TreeNode minNode = findMinNode(node.right);
