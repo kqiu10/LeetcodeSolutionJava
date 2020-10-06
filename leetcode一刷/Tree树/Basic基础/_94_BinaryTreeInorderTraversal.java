@@ -16,38 +16,34 @@ import java.util.Stack;
  * Space complexity: O(h);
 
  */
-public class _144_BinaryTreePreorderTraversal {
-    public List<Integer> preorderTraversal(TreeNode root) {
+public class _94_BinaryTreeInorderTraversal {
+    public List<Integer> inorderTraversal(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) return res;
-        preorder(root, res);
+        inorder(root, res);
         return res;
-
     }
-    private void preorder(TreeNode root, List<Integer> res) {
+    private void inorder(TreeNode root, List<Integer> res) {
         if (root == null) return;
+        inorder(root.left, res);
         res.add(root.val);
-        preorder(root.left, res);
-        preorder(root.right, res);
+        inorder(root.right, res);
     }
-
-    public List<Integer> preorderIteration(TreeNode root) {
+    public List<Integer> inorderIteration(TreeNode root) {
         List<Integer> res = new ArrayList<>();
         if (root == null) return res;
         Stack<TreeNode> stack = new Stack<>();
-        stack.push(root);
-        while (!stack.isEmpty()) {
-            TreeNode cur = stack.pop();
-            if (cur.right != null) {
-                stack.push(cur.right);
+        TreeNode cur = root;
+        while (cur != null || !stack.isEmpty()) {
+            while (cur != null) {
+                stack.push(cur);
+                cur = cur.left;
             }
-            if (cur.left != null) {
-                stack.push(cur.left);
-            }
+            cur = stack.pop();
             res.add(cur.val);
+            cur = cur.right;
+
         }
         return res;
     }
-
-
 }
