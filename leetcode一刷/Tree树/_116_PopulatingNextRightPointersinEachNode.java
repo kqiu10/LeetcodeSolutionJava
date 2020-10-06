@@ -18,12 +18,23 @@ package Tree树; /**
  * the next pointer should be set to NULL.
  *
  * Initially, all next pointers are set to NULL.
- * Time complexity:O();
- * Space complexity: O();
+ *
+ * Time complexity:O(n);
+ * Space complexity: O(n); worst case : LinkedList
 
  */
 public class _116_PopulatingNextRightPointersinEachNode {
     public Node connect(Node root) {
+        if (root == null) return null;
+        if (root.left != null) {
+            root.left.next = root.right;
+        }
+        if (root.next != null && root.right != null) {
+            root.right.next = root.next.left;
+        }
+        connect(root.left);
+        connect(root.right);
+        return root;
 
     }
 }
