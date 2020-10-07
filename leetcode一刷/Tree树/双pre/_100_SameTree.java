@@ -31,26 +31,15 @@ import java.util.List;
  [1,2,1],   [1,1,2]
 
  Output: false
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(h);
 
  */
 public class _100_SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        List<Integer> pl = new LinkedList<>();
-        List<Integer> ql = new LinkedList<>();
-        helper(p, pl);
-        helper(q, ql);
-        return pl.equals(ql);
-    }
-
-    private void helper(TreeNode root, List<Integer> list) {
-        if (root == null) {
-            return;
-        }
-        list.add(root.val);
-        helper(root.left, list);
-        helper(root.right, list);
-
+        if (p == null && q == null) return true;
+        if (p == null || q == null) return false;
+        if (p.val != q.val) return false;
+        return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
     }
 }
