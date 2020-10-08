@@ -17,7 +17,7 @@ import java.util.Queue;
  */
 public class _226_InvertBinaryTree {
     /**
-     * Description: DFS
+     * Description: BFS recursion
      * Time complexity:O(n);
      * Space complexity: O(h);
      */
@@ -31,7 +31,7 @@ public class _226_InvertBinaryTree {
     }
 
     /**
-     * Description: BFS
+     * Description: BFS Iteration
      * Time complexity:O(n);
      * Space complexity: O(h);
      */
