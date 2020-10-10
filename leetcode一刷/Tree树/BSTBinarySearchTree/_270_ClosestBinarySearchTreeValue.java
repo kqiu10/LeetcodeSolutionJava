@@ -8,8 +8,8 @@ import Tree树.TreeNode;
 
 /**
  * Description: TODO
- * Time complexity:O(n);
- * Space complexity: O(h);
+ * Time complexity:O(h);
+ * Space complexity: O(1);
 
  */
 public class _270_ClosestBinarySearchTreeValue {
