@@ -1,4 +1,4 @@
-package Tree树.BSTBinarySearchTree;
+package Tree树.二叉搜索树BinarySearchTree;
 /**
  * Date: 10/10/20
  * Question Description
