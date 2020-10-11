@@ -7,8 +7,8 @@ import Tree树.难且重要.Node;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(n);
 
  */
 public class _116_PopulatingNextRightPointersinEachNode {
