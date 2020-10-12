@@ -34,7 +34,7 @@ import java.util.Arrays;
 
  */
 public class _452_MinimumNumberofArrowstoBurstBalloons {
-    public int findMinArrowShots(int[][] points) {
+    public int findMinArrowShots (int[][] points) {
         if (points.length == 0) {
             return 0;
         }
