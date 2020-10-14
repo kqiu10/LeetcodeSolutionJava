@@ -1,4 +1,4 @@
-package 树形结构.线段树;
+package 树形结构.线段树BinarySearchTree;
 /**
  * Date: 10/13/20
  * Question Description
