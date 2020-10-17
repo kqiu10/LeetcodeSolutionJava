@@ -7,4 +7,5 @@ public interface IAVLTree {
     int size();
 
     boolean isEmpty();
+    void remove(int vak);
 }

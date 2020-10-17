@@ -6,6 +6,7 @@ package Tree.avl.impl;
 
 import Tree.avl.AVLNode;
 import Tree.avl.IAVLTree;
+import Tree.binarySearchTree.TreeNode;
 
 /**
  * Description: TODO
@@ -42,6 +43,14 @@ public class AVLTreeImpl implements IAVLTree {
             return rightRotate(node);
         }
         if (balanceFactor < -1 && getBalanceFactor(node.right) <= 0) {
+            return leftRotate(node);
+        }
+        if (balanceFactor > 1 && getBalanceFactor(node.left) < 0) {
+            node.left = leftRotate(node.left);
+            return rightRotate(node);
+        }
+        if (balanceFactor < -1 && getBalanceFactor(node.right) < 0) {
+            node.right = rightRotate(node.right);
             return leftRotate(node);
         }
         return node;
@@ -107,6 +116,61 @@ public class AVLTreeImpl implements IAVLTree {
     }
 
     @Override
+    public void remove(int val) {
+        root = remove(root, val);
+    }
+
+    private AVLNode remove(AVLNode node, int val) {
+        AVLNode changeNode = null;
+        if (node == null) {return null;}
+        if (node.val > val) {
+            node.left = remove(node.left, val);
+            changeNode = node;
+        } else if (node.val < val) {
+            node.right = remove(node.right, val);
+            changeNode = node;
+        } else {
+            if (node.left == null) {
+                size--;
+                changeNode = node;
+            } else if (node.right == null) {
+                size--;
+                changeNode = node;
+            } else {
+                AVLNode minNode = findMinNode(node.right);
+                node.val = minNode.val;
+                node.right = remove(node.right, node.val);
+            }
+        }
+        if (changeNode == null) {
+            return null;
+        }
+        node.height = 1 + Math.max(getHeight(changeNode.left), getHeight(changeNode.right));
+        int balanceFactor = getBalanceFactor(changeNode);
+        if (balanceFactor > 1 && getBalanceFactor(changeNode.left) >= 0) {
+            return rightRotate(changeNode);
+        }
+        if (balanceFactor < -1 && getBalanceFactor(changeNode.right) <= 0) {
+            return leftRotate(changeNode);
+        }
+        if (balanceFactor > 1 && getBalanceFactor(changeNode.left) < 0) {
+            node.left = leftRotate(changeNode.left);
+            return rightRotate(changeNode);
+        }
+        if (balanceFactor < -1 && getBalanceFactor(changeNode.right) < 0) {
+            node.right = rightRotate(changeNode.right);
+            return leftRotate(changeNode);
+        }
+        return changeNode;
+    }
+    private AVLNode findMinNode(AVLNode node) {
+        while (node.left != null) {
+            node = node.left;
+        }
+        return node;
+    }
+
+    @Override
     public int size() {
         return size;
     }
@@ -115,4 +179,5 @@ public class AVLTreeImpl implements IAVLTree {
     public boolean isEmpty() {
         return size == 0;
     }
+
 }
