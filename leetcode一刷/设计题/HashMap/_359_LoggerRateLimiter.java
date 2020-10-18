@@ -8,8 +8,8 @@ import java.util.HashMap;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(1);
+ * Space complexity: O(n);
 
  */
 public class _359_LoggerRateLimiter {
