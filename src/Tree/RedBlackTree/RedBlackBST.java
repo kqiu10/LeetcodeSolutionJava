@@ -48,4 +48,15 @@ public class RedBlackBST<Key extends  Comparable<Key>, value> {
         return root == null;
     }
 
+    private Node rotateLeft(Node h) {
+        Node x = h.right;
+        h.right = x.left;
+        x.left = h.left;
+        x.color = x.left.color;
+        x.left.color = RED;
+        x.size = h.size;
+        h.size = size(h.left) + size(h.right) + 1;
+        return x;
+    }
+
 }
