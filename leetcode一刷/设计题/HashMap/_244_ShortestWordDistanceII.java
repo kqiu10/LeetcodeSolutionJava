@@ -2,14 +2,6 @@ package 设计题.HashMap;
 /**
  * Date: 10/18/20
  * Question Description
- */
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-
-/**
- * Description:
  Design a class which receives a list of words in the constructor,
  and implements a method that takes two words word1 and word2 and
  return the shortest distance between these two words in the list.
@@ -21,6 +13,15 @@ import java.util.List;
  Output: 3
  Input: word1 = "makes", word2 = "coding"
  Output: 1
+ */
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+/**
+ * Description:
+
  * Time complexity:O(n);
  * Space complexity: O(n + m);
 
