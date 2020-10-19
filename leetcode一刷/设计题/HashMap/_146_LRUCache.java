@@ -38,9 +38,19 @@ package 设计题.HashMap;
 import java.util.HashMap;
 
 /**
- * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Description:
+ * put function thinking
+ *   有相同key node
+ *
+ *   无相同key node :   hashmap满了
+ *
+ *                     hashmap非满 ： hashmap无元素
+ *
+ *                                   hashmap有元素
+ *
+ *
+ * Time complexity:O(1);
+ * Space complexity: O(n);
 
  */
 public class _146_LRUCache {
