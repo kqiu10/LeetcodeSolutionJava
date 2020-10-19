@@ -30,7 +30,12 @@ import java.util.HashMap;
 import java.util.Random;
 
 /**
- * Description: TODO
+ * Description:
+ Ex
+ list : 2 ,3, 4 lastVal = 4;
+ map 2 0
+     3 1   delete index = 1;
+     4 2
  * Time complexity:O(1);
  * Space complexity: O();
 
