@@ -41,7 +41,6 @@ import java.util.List;
  j = 2 3
  * Time complexity:O(n);
  * Space complexity: O(1); 注意
-
  */
 public class _281_ZigzagIterator {
 
@@ -65,8 +64,10 @@ public class _281_ZigzagIterator {
     }
 
 
-
-
+/**
+ * Time complexity:O(n);
+ * Space complexity: O(1); 注意
+ */
     LinkedList<Iterator> list;
     public void _281_ZigzagIteratorII(List<Integer> v1, List<Integer> v2) {
         list = new LinkedList<>();
