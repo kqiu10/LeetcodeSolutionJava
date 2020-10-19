@@ -24,7 +24,7 @@ import java.util.HashMap;
  *
  * Example:
  *
- * LRUCache cache = new LRUCache( 2 /* capacity  );
+ * _146_LRUCache cache = new _146_LRUCache( 2 /* capacity  );
  *
  * cache.put(1,1);
  * cache.put(2,2);
