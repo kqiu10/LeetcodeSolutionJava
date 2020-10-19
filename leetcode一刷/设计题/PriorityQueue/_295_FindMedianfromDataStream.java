@@ -27,9 +27,19 @@ package 设计题.PriorityQueue;
 import java.util.PriorityQueue;
 
 /**
- * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Description:
+ * Two PriorityQueue
+ * 1 2 -3
+ * small: 3
+ * large: 2 1
+ * when the count is odd, large queue will always be larger than small queue, and the median is large.poll();
+ * 1 2 -3 4
+ * small: -1 3
+ * large:  2 4
+ * number in small priority queue always be opposite.
+ * when the count is even, median is large.peek() - small.peek();
+ * Time complexity:O(logn);
+ * Space complexity: O(n);
 
  */
 public class _295_FindMedianfromDataStream {
