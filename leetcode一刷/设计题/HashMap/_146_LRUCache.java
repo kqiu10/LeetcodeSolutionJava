@@ -39,6 +39,11 @@ import java.util.HashMap;
 
 /**
  * Description:
+ * HashMap + Double Linked List
+ * 插入(更重要)  1.不存在 -> capacity -> if (head == null ) 2 (head != null)
+ *      2.存在 (排序)
+ * 取出  1.不存在
+ *      2.存在 (排序)
  * put function thinking
  *   有相同key node
  *
