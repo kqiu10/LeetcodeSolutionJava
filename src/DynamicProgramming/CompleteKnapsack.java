@@ -28,10 +28,6 @@ public class CompleteKnapsack {
     public int knapsackCompleteII(int[] weight, int[] value, int C, int N) {
         int[] memo = new int[C + 1];
 
-        for (int i = 0; i <= C; i++) {
-            memo[i] = (i >= weight[0]) ? value[0] : 0;
-        }
-
         for (int i = 1; i < N; i++) {
             for (int j = weight[i]; j <= C; j++) {
                 memo[j] = Math.max(memo[j], value[i] + memo[j - weight[i]]);
