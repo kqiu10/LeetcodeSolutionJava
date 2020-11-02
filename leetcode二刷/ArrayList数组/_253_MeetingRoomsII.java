@@ -14,6 +14,7 @@ import java.util.PriorityQueue;
  * Space complexity: O(n);
  * Description: TODO
  */
+//最优解
 public class _253_MeetingRoomsII {
     public int minMeetingRooms(int[][] intervals) {
         if (intervals == null || intervals.length == 0) return 0;
@@ -38,6 +39,7 @@ public class _253_MeetingRoomsII {
     }
 }
 
+//只做了解
 class MeetingRoomsIIII{
     public int minMeetingRooms(int[][] intervals) {
         if (intervals == null || intervals.length == 0) return 0;
