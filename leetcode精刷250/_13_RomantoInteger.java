@@ -5,8 +5,8 @@
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(1);
 
  */
 public class _13_RomantoInteger {
