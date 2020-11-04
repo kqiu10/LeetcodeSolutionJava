@@ -57,7 +57,7 @@ public class _39_CombinationSum {
         }
         for (int i = index; i < candidates.length; i++) {
             list.add(candidates[i]);
-            helper(res, list, candidates, target - candidates[i], index);
+            helper(res, list, candidates, target - candidates[i], i);
             list.remove(list.size() - 1);
         }
 
