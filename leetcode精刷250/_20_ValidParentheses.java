@@ -7,8 +7,8 @@ import java.util.Stack;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(n);
 
  */
 public class _20_ValidParentheses {
