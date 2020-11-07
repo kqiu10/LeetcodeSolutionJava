@@ -27,4 +27,19 @@ public class _62_UniquePaths {
         return dp[m - 1][n - 1];
 
     }
+    /**
+     * Description: TODO
+     * Time complexity:O(m * n);
+     * Space complexity: O(n);
+     */
+    public int uniquePathsII(int m, int n) {
+        int[] dp = new int[n];
+        dp[0] = 1;
+        for (int i = 0; i < m; i++) {
+            for (int j = 1; j < n; j++) {
+                dp[j] = dp[j] + dp[j - 1];
+            }
+        }
+        return dp[n - 1];
+    }
 }
