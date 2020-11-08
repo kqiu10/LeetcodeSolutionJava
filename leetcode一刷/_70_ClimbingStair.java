@@ -10,7 +10,7 @@
  * Space complexity: O(1);
  * Description: Fibonacci Solution
  */
-public class _70_ClimbingStairs {
+public class _70_ClimbingStair {
     public int climbStairs(int n) {
         if (n == 1) {
             return 1;
