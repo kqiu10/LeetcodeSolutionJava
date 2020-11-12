@@ -18,11 +18,25 @@
  -10  5
  */
 
+import Tree树.TreeNode;
+
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(h);
 
  */
 public class _108_ConvertSortedArraytoBinarySearchTree {
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if (nums.length == 0) return null;
+        return helper(nums, 0, nums.length - 1);
+    }
+    private TreeNode helper(int[] nums, int left, int right) {
+        if (left > right) return null;
+        int mid = (right - left) / 2 + left;
+        TreeNode res = new TreeNode(nums[mid]);
+        res.left = helper(nums, left, mid - 1);
+        res.right = helper(nums, mid + 1, right);
+        return res;
+    }
 }
