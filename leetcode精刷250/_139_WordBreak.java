@@ -26,7 +26,7 @@ import java.util.List;
 
 /**
  * Description: TODO
- * Time complexity:O(n ^ 2);
+ * Time complexity:O(n^2);
  * Space complexity: O(n);
 
  */
