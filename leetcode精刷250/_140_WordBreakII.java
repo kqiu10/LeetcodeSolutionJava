@@ -43,6 +43,7 @@ public class _140_WordBreakII {
         List<String> res = new ArrayList<>();
         if (start == s.length()) {
             res.add("");
+            System.out.println();
         }
         for (int end = start + 1; end <= s.length(); end++) {
             if (words.contains(s.substring(start, end))) {
