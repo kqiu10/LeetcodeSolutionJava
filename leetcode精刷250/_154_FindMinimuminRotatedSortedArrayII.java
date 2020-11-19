@@ -24,6 +24,7 @@ public class _154_FindMinimuminRotatedSortedArrayII {
             } else if (nums[pivot] > nums[r]) {
                 l = pivot;
             } else {
+                //corner case : 1 1 1 1 2 1
                 r--;
             }
         }
