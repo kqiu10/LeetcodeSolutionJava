@@ -12,7 +12,9 @@
  */
 
 /**
- * Description: TODO
+ * Description:
+ index : buff当前能读单词个数
+ count : read4能读单词个数
  * Time complexity:O(n);
  * Space complexity: O(1);
 
