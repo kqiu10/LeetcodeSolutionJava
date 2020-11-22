@@ -19,8 +19,6 @@ package 树形结构.字典树;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
 
  */
 class TrieNode {
