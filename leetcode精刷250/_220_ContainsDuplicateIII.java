@@ -28,7 +28,7 @@ import java.util.TreeSet;
  * TreeSet
  */
 public class _220_ContainsDuplicateIII {
-    public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+    public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
         if (k < 1 || t < 0) return false;
         TreeSet<Long> set = new TreeSet<>();
         for (int i = 0; i < nums.length; i++) {
