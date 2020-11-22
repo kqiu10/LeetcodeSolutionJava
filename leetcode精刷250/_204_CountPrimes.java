@@ -31,7 +31,7 @@ public class _204_CountPrimes {
         for (int i = 2; i < n; i++) {
             if(notPrime[i] == false) {
                 count++;
-                for (int j = 0; i * j < n; j++) {
+                for (int j = 2; i * j < n; j++) {
                     notPrime[i * j] = true;
                 }
             }
