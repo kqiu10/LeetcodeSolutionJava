@@ -28,7 +28,7 @@
  * Time complexity:O(k * n);
  * Space complexity: O(k * n);
  */
-public class _188_BestTimeToBuyandSellStockIv {
+public class _188_BestTimeToBuyandSellStockIV {
     public int maxProfit(int k, int[] prices) {
         int len = prices.length;
         if (k >= len / 2) return helper(prices);
