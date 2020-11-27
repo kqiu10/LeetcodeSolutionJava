@@ -17,6 +17,7 @@ public class _251_Flatten2DVector {
         indexArray = 0;
         indexNum = 0;
         list = v;
+        int x = Integer.parseInt("");
     }
 
     public int next() {
