@@ -8,8 +8,8 @@ import java.util.HashSet;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(n);
+ * Space complexity: O(n);
 
  */
 public class _290_WordPattern {
