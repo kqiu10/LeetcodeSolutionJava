@@ -16,8 +16,8 @@ import java.util.HashMap;
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(2^n);
+ * Space complexity: O(2^n);
 
  */
 public class _294_FlipGameII {
