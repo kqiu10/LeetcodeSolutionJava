@@ -22,7 +22,7 @@ public class _307_RangeSumQueryMutable {
     int[] nums;
     int n;
     /**
-     * Time complexity:O(logn);
+     * Time complexity:O(nlogn);
      */
     public _307_RangeSumQueryMutable(int[] nums) {
         n = nums.length;
