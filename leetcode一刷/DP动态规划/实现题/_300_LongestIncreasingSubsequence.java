@@ -44,4 +44,27 @@ public class _300_LongestIncreasingSubsequence {
         }
         return size;
     }
+    public static int lengthOfLISII(int[] nums) {
+        if (nums == null || nums.length == 0) return 0;
+        int res = 1;
+        int[] dp = new int[nums.length];
+        dp[0] = 1;
+
+        for (int i = 1; i < dp.length; i++) {
+            int maxVal = 0;
+            for (int j = 0; j < i; j++) {
+                if (nums[i] > nums[j]) {
+                    maxVal = Math.max(maxVal, dp[j]);
+                }
+            }
+            dp[i] = maxVal + 1;
+            res = Math.max(res, dp[i]);
+        }
+        return res;
+    }
+
+    public static void main(String[] args) {
+        int[] nums = new int[]{10,9,2,5,3,7,101,18};
+        System.out.println(lengthOfLISII(nums));
+    }
 }

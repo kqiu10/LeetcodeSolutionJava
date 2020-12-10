@@ -92,6 +92,6 @@ public class _300_LongestIncreasingSubsequence {
 
     public static void main(String[] args) {
         int[] nums = new int[]{10,9,2,5,3,7,101,18};
-        System.out.println(lengthOfLIS(nums));
+        System.out.println(lengthOfLISII(nums));
     }
 }
