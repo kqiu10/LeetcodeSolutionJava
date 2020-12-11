@@ -19,8 +19,8 @@
 
 /**
  * Description: TODO
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(logn);
+ * Space complexity: O(1);
 
  */
 public class _367_ValidPerfectSquare {
