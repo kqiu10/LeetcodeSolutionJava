@@ -95,4 +95,7 @@ class NestedInteger {
     public boolean hasNext() {
         return true;
     }
+
+    public void add(NestedInteger nestedInteger) {
+    }
 }
