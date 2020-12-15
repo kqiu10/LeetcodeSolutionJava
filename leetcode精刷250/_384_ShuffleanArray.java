@@ -55,7 +55,7 @@ public class _384_ShuffleanArray {
             swap(copy, i, random);
         }
         return copy;
-      
+
     }
     private void swap(int[] arr, int i, int j) {
         int temp = arr[i];
