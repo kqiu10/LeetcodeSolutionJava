@@ -18,7 +18,7 @@ package Subsequence;
  * by one to see if T has its subsequence. In this scenario, how would you change your code?
  *
  * Credits:
- * Special thanks to @pbrother for adding this problem and creating all test cases.
+ * Special thanks to @pbrother for adding this problem and creating all test1 cases.
  *
  *
  *

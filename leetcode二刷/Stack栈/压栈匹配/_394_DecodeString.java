@@ -40,7 +40,7 @@ import java.util.Stack;
  *
  * Time complexity:O(n);
  * Space complexity: O(n);
- * Description: run one test
+ * Description: run one test1
  */
 public class _394_DecodeString {
     public static String decodeString(String s) {

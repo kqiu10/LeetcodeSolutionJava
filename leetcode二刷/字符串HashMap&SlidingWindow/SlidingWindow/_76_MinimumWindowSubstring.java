@@ -18,7 +18,7 @@ package SlidingWindow;
  * Time complexity:O();
  * Space complexity: O();
  * Description:
- * test case :
+ * test1 case :
  * S = "ADOBECODEBANC"
  * T = "ABC"
  *
