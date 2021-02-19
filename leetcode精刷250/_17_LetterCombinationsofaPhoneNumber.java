@@ -29,7 +29,7 @@ public class _17_LetterCombinationsofaPhoneNumber {
         }
         String letters  = mapping[digits.charAt(index) - '0'];
         for (int i = 0; i < letters.length(); i++) {
-            helper(res, digits, cur + letters.charAt(i), i + 1);
+            helper(res, digits, cur + letters.charAt(i), index + 1);
         }
     }
 
