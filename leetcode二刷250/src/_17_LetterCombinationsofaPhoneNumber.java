@@ -22,6 +22,7 @@
  */
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 
@@ -52,7 +53,24 @@ public class _17_LetterCombinationsofaPhoneNumber {
 
     /**
      * Time Complexity: O(3^n)
-     * Space Complexity: O(n^3)
-     * backtracking
+     * Space Complexity: O(n)
+     *  LinkedList is like queue, first in first out
+     * Ex "23"  element in linkedlist : "" -> c b a -> af ae ad c b -> bf be bd af ae ad c ->
+     *                                  cf ce cd bf be bd af ae ad
      */
+    public List<String> letterCombinationsII(String digits) {
+        LinkedList<String> res = new LinkedList<>();
+        if (digits == null || digits.length() == 0) return res;
+        res.add("");
+        for (int i = 0; i < digits.length(); i++) {
+            while (res.peek().length() == i) {
+                String t = res.remove();
+                for (char ch : mapping[digits.charAt(i) - '0'].toCharArray()) {
+                    String cur = t + ch;
+                    res.add(cur);
+                }
+            }
+        }
+        return res;
+    }
 }
