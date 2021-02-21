@@ -35,7 +35,7 @@ public class Main {
     }
     public static void testArrayCircularOfQueueImpl() {
         ArrayCircularOfQueueImpl queue = new ArrayCircularOfQueueImpl();
-        for (int i = 0; i <9; i++) {
+        for (int i = 0; i < 9; i++) {
             queue.offer(i);
         }
         queue.print();
