@@ -9,8 +9,8 @@ package sortAlgorithm;
 import java.util.Arrays;
 
 /**
- * Time complexity:O();
- * Space complexity: O();
+ * Time complexity:O(nlogn);
+ * Space complexity: O(nlogn);
  * Description: TODO
  */
 public class HeapSort {

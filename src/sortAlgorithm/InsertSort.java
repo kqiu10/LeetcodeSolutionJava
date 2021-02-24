@@ -10,10 +10,10 @@ package sortAlgorithm;
 import java.util.Arrays;
 
 /**
- * Best Time complexity: O();
+ * Best Time complexity: O(n^2);
  * Worst Time complexity: O();
- * Average Time complexity:O();
- * Space complexity: O();
+ * Average Time complexity:O(n^2);
+ * Space complexity: O(1);
  */
 public class InsertSort {
     public static void insertSort(int[] nums) {
@@ -29,7 +29,6 @@ public class InsertSort {
                 }
                 System.out.println((i+1) + " round " + "步骤 " + Arrays.toString(nums));
             }
-
         }
     }
     /**
@@ -68,7 +67,7 @@ public class InsertSort {
 
     public static void main(String[] args) {
         int[] nums = new int[]{5, 2, 9, 4, 7, 6, 1, 3, 8};
-//        insertSort(nums);
-        insertBinarySort(nums);
+        insertSort(nums);
+//        insertBinarySort(nums);
     }
 }

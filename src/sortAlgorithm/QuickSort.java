@@ -43,6 +43,7 @@ public class QuickSort {
             }
             System.out.println("当前结果 " + Arrays.toString(nums));
         }
+        // move the pivot to its final location
         swap(nums, pivotIndex, r);
         System.out.println(("此轮结束 " + Arrays.toString(nums)));
         return r;
