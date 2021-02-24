@@ -40,6 +40,8 @@ public class Preorder {
         List<Integer> res = new ArrayList<>();
         if (root == null) {
             return;
+
+
         }
         Stack<TreeNode> stack = new Stack<>();
         stack.push(root);
