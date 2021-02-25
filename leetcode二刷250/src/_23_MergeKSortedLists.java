@@ -43,7 +43,7 @@ public class _23_MergeKSortedLists {
     }
     public ListNode mergeKLists(ListNode[] lists) {
         if (lists == null || lists.length == 0) return null;
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        PriorityQueue<Integer> pq = new PriorityQueue<>((a, b) ->(a - b));
         for (ListNode list : lists) {
             while (list != null) {
                 pq.add(list.val);
