@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Time Complexity: O()
- * Space Complexity: O()
+ * Time complexity:O(4^n / n^(1/2));
+ * Space complexity: O(n);
  */
 public class _22_GenerateParentheses {
     public static List<String> generateParenthesis(int n) {
