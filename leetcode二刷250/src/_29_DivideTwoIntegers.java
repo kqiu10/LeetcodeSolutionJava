@@ -37,28 +37,36 @@
  */
 
 /**
- * Time Complexity: O()
- * Space Complexity: O()
+ * Time Complexity: O(logn)
+ * Space Complexity: O(logn)
  */
 public class _29_DivideTwoIntegers {
     public static int divide(int dividend, int divisor) {
-        if (dividend == 0) return 0;
         int signal = 1;
-        if (dividend * divisor < 0) {
+        if ((dividend > 0 && divisor < 0) || (dividend < 0 && divisor > 0)) {
             signal = -1;
         }
         long Ldividend = Math.abs((long)dividend);
         long Ldivisor = Math.abs((long)divisor);
+        if (Ldividend < Ldivisor || dividend == 0) return 0;
 
-        long res = 0;
-        while (Ldividend >= Ldivisor) {
-            Ldividend -= Ldivisor;
-            res++;
-        }
-        if (res >= Integer.MAX_VALUE) {
+        long Lres = helper(Ldividend, Ldivisor);
+
+        if (Lres >= Integer.MAX_VALUE) {
             return signal == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
         }
-        return (int)res * signal;
+        return (int)Lres * signal;
+    }
+
+    private static long helper(long ldividend, long ldivisor) {
+        if (ldividend < ldivisor) return 0;
+        long sum = ldivisor;
+        long multiple = 1;
+        while ((sum + sum) <= ldividend) {
+            sum += sum;
+            multiple += multiple;
+        }
+        return multiple + helper(ldividend - sum, ldivisor);
     }
 
     public static void main(String[] args) {
