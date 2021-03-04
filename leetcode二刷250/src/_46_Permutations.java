@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Time Complexity: O(n!)
+ * Time Complexity: O(n! * n)
  * Space Complexity: O(n)
  */
 public class _46_Permutations {
