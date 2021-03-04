@@ -37,8 +37,8 @@
  */
 
 /**
- * Time Complexity: O()
- * Space Complexity: O()
+ * Time Complexity: O(m * n)
+ * Space Complexity: O(m + n)
  */
 public class _44_WildcardMatching {
     public boolean isMatch(String s, String p) {
