@@ -59,7 +59,7 @@ public class _65_ValidNumber {
                 if (eSeen || pointSeen) return false;
                 pointSeen = true;
 
-            } else if (s.charAt(i) == 'e') {
+            } else if (s.charAt(i) == 'e' || s.charAt(i) == 'E') {
                 if (eSeen || !numberSeen) return false;
                 eSeen = true;
                 numberAfterE = false;
