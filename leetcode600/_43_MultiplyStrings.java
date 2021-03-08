@@ -30,6 +30,7 @@ public class _43_MultiplyStrings {
     public static String multiply(String num1, String num2) {
         if (num1.length() == 0 || num2.length() == 0) {
             return null;
+
         }
         int[] digits = new int[num1.length() + num2.length()];
         for (int i = num1.length() - 1; i >= 0; i--) {
