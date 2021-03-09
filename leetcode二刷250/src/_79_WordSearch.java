@@ -29,8 +29,30 @@
  */
 
 /**
- * Time Complexity: O()
- * Space Complexity: O()
+ * Time Complexity: O(unknown)
+ * Space Complexity: O(unknown)
  */
 public class _79_WordSearch {
+    public boolean exist(char[][] board, String word) {
+        int m = board.length;
+        int n = board[0].length;
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (board[i][j] == word.charAt(0) && exists(board, i, j, word, 0)) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+    private boolean exists(char[][] board, int i, int j, String word, int pos) {
+        if (pos == word.length()) return true;
+        if (i < 0 || i >= board.length || j < 0 || j >= board[0].length || board[i][j] != word.charAt(pos ++)) return false;
+        char temp = board[i][j];
+        board[i][j] = '*';
+        boolean isExists = exists(board, i + 1, j, word, pos) || exists(board, i - 1, j, word, pos) || exists(board, i, j + 1, word, pos) || exists(board, i, j - 1, word, pos);
+        if (isExists) return true;
+        board[i][j] = temp;
+        return false;
+    }
 }
