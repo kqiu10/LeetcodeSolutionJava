@@ -1,4 +1,4 @@
-/**
+package src; /**
  * Date: 11/12/20
  * Question Description
  Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).

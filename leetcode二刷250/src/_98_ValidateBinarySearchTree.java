@@ -28,7 +28,7 @@
  * Space Complexity: O()
  */
 public class _98_ValidateBinarySearchTree {
-    class TreeNode {
+    private class TreeNode {
           int val;
           TreeNode left;
           TreeNode right;
