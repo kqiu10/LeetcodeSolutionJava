@@ -32,6 +32,7 @@ public class _112_PathSum {
         int val;
         TreeNode left;
         TreeNode right;
+
         TreeNode() {}
         TreeNode(int val) { this.val = val; }
         TreeNode(int val, TreeNode left, TreeNode right) {
