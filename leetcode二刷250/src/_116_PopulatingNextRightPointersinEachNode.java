@@ -19,7 +19,7 @@
  * Space Complexity: O()
  */
 public class _116_PopulatingNextRightPointersinEachNode {
-    class Node {
+    private class Node {
         public int val;
         public Node left;
         public Node right;
