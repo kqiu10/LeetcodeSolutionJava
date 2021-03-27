@@ -17,6 +17,8 @@
  * Explanation: "raceacar" is not a palindrome.
  */
 
+import java.util.Scanner;
+
 /**
  * Time Complexity: O(n)
  * Space Complexity: O(1)
@@ -41,12 +43,9 @@ public class _125_ValidPalindrome {
     }
 
     public static void main(String[] args) {
-        for (int i = 1; i <= 9; i++) {
-            for (int j = i; j <= 9; j++) {
-                System.out.print("i is " + i + " j is " + j + "res is "+ i * j);
-            }
-            System.out.println();
-        }
+        Scanner scan = new Scanner(System.in);
+        int count = scan.nextInt();
+
     }
 
 
