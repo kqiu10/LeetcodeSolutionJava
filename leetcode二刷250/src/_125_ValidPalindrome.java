@@ -17,7 +17,8 @@
  * Explanation: "raceacar" is not a palindrome.
  */
 
-import java.util.Scanner;
+import java.util.Arrays;
+import java.util.HashSet;
 
 /**
  * Time Complexity: O(n)
@@ -43,9 +44,16 @@ public class _125_ValidPalindrome {
     }
 
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        int count = scan.nextInt();
-
+        int[] res = new int[6];
+        HashSet<Integer> set = new HashSet<>();
+        for (int i = 0; i < res.length; i++) {
+            int num = (int)(Math.random() * 30) + 1;
+            while(!set.add(num)) {
+                num = (int)(Math.random() * 30) + 1;
+            };
+            res[i] = num;
+        }
+        System.out.println("result is " + Arrays.toString(res));
     }
 
 
