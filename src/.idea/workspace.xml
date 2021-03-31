@@ -20,8 +20,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87599b07-caa2-44a1-ae32-6ec35a21ede1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,8 +62,16 @@
       <option name="presentableId" value="Default" />
       <updated>1600048263549</updated>
       <workItem from="1600048265152" duration="92000" />
-      <workItem from="1617033752603" duration="376000" />
+      <workItem from="1617033752603" duration="823000" />
     </task>
+    <task id="LOCAL-00001" summary="added workspace">
+      <created>1617073761658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617073761658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,14 +89,8 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="328" y="106" key="#Project_Structure" timestamp="1600048329750">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="328" y="106" key="#Project_Structure/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600048329750" />
-    <state x="474" y="147" key="new project wizard" timestamp="1600048335194">
-      <screen x="0" y="0" width="1680" height="1050" />
-    </state>
-    <state x="474" y="147" key="new project wizard/-240.-1080.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1600048335194" />
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="added workspace" />
   </component>
 </project>
