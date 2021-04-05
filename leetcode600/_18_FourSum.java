@@ -37,7 +37,9 @@ import java.util.List;
 public class _18_FourSum {
     public List<List<Integer>> fourSum(int[] nums, int target) {
         List<List<Integer>> res = new ArrayList<>();
-        if (nums.length < 4) return res;
+        if (nums.length < 4) {
+            return res;
+        }
         Arrays.sort(nums);
         for (int i = 0; i < nums.length - 3; i++) {
             if (i > 0 && nums[i] == nums[i - 1]) continue;
