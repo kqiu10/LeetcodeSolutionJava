@@ -49,9 +49,46 @@ public class test {
         arr[b] = temp;
     }
 
+    public int findSubIncreaseArray(int[] arr) {
+        int res = 0;
+        for (int i = 0, j = 0; i < arr.length - 1; i++) {
+            if (i == arr.length - 2 && j == 0) {
+                return arr.length;
+            }
+            else {
+                res = Math.max(res, i - j + 1);
+            }
+            if (arr[i + 1] < arr[i]) {
+                res = Math.max(res, i - j + 1);
+                j = i;
+            }
+        }
+        return res;
+    }
+
+    public boolean compareTwoString(String s1, String s2) {
+        if (s1.length() > s2.length()) return false;
+        boolean[][] dp = new boolean[s1.length() + 1][s2.length() + 1];
+        dp[0][0] = true;
+        for (int i = 1; i <= s1.length(); i++) {
+            for (int j = 1; j <= s2.length(); j++) {
+                if (s1.charAt(i - 1) != s2.charAt(j - 1)) {
+                    dp[i][j] = dp[i - 1][j];
+                } else {
+                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j - 1];
+                }
+            }
+        }
+        return dp[s1.length()][s2.length()];
+    }
+
     public static void main(String[] args) {
         test t1 = new test();
 //        System.out.println( t1.findCommon(new int[]{1, 2, 5, 3, 0}, new int[]{2, 2, 0}));
-        t1.swapZero(new int[]{0, 8, 9, 0, 4, 2, 0, 0});
+//        t1.swapZero(new int[]{0, 8, 9, 0, 4, 2, 0, 0});
+//        System.out.println(t1.findSubIncreaseArray(new int[]{1, 2, 3, 1, 5, 7, 8, 9}));
+//        System.out.println(t1.findSubIncreaseArray(new int[]{1, 2, 3, 4, 5, 6, 7}));
+        System.out.println(t1.compareTwoString("aabc", "abaabc"));
     }
+
 }
