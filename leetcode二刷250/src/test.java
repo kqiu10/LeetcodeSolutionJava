@@ -5,10 +5,7 @@
  * Examples:
  */
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
+import java.util.*;
 
 /**
  * Time Complexity: O()
@@ -82,13 +79,43 @@ public class test {
         return dp[s1.length()][s2.length()];
     }
 
+    /**
+     * question 4
+     * @param args
+     */
+    public int[] nextGreaterElement(int[] nums1, int[] nums2) {
+        int[] res = new int[nums1.length];
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for (int i = 0; i < nums2.length - 1; i++) {
+            int cur = i + 1;
+            while (cur <= nums2.length - 1 && nums2[cur] < nums2[i]) {
+                cur++;
+            }
+            if (cur == nums2.length) {
+                map.put(nums2[i], -1);
+            } else {
+                map.put(nums2[i], nums2[cur]);
+            }
+        }
+        map.put(nums2[nums2.length - 1], -1);
+        for (int i = 0; i < nums1.length; i++) {
+            res[i] = map.get(nums1[i]);
+        }
+        return res;
+    }
+
+
+
     public static void main(String[] args) {
         test t1 = new test();
 //        System.out.println( t1.findCommon(new int[]{1, 2, 5, 3, 0}, new int[]{2, 2, 0}));
 //        t1.swapZero(new int[]{0, 8, 9, 0, 4, 2, 0, 0});
 //        System.out.println(t1.findSubIncreaseArray(new int[]{1, 2, 3, 1, 5, 7, 8, 9}));
 //        System.out.println(t1.findSubIncreaseArray(new int[]{1, 2, 3, 4, 5, 6, 7}));
-        System.out.println(t1.compareTwoString("aabc", "abaabc"));
+//        System.out.println(t1.compareTwoString("aabc", "abaabc"));
+        System.out.println(Arrays.toString(t1.nextGreaterElement(new int[]{2,4}, new int[]{1,
+                2,3,4})));
     }
+
 
 }
