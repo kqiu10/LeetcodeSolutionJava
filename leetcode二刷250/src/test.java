@@ -122,6 +122,43 @@ public class test {
         return res;
     }
 
+    /**
+     * test 7
+     * @param args
+     */
+    public String decodeString(String s) {
+        Stack<Integer> number = new Stack<>();
+        Stack<String> digits = new Stack<>();
+        String res = "";
+        int idx = 0;
+        while (idx < s.length()) {
+            if (Character.isDigit(s.charAt(idx))) {
+                int num = 0;
+                while (Character.isDigit(s.charAt(idx))) {
+                    num = num * 10 + (s.charAt(idx) - '0');
+                    idx++;
+                }
+                number.push(num);
+            } else if (s.charAt(idx) == '[') {
+                digits.push(res);
+                res = "";
+                idx++;
+            } else if (s.charAt(idx) == ']') {
+                StringBuilder sb = new StringBuilder(digits.pop());
+                int frequent = number.pop();
+                for (int i = 0; i < frequent; i++) {
+                    sb.append(res);
+                }
+                res = sb.toString();
+                idx++;
+            } else {
+                res += s.charAt(idx);
+                idx++;
+            }
+        }
+        return res;
+    }
+
 
 
     public static void main(String[] args) {
