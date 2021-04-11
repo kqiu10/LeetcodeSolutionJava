@@ -80,7 +80,7 @@ public class test {
     }
 
     /**
-     * question 4
+     * question 5
      * @param args
      */
     public int[] nextGreaterElement(int[] nums1, int[] nums2) {
@@ -104,6 +104,24 @@ public class test {
         return res;
     }
 
+    /**
+     * question 6
+     * @param args
+     */
+    public String destCity(List<List<String>> paths)  {
+        HashSet<String> set = new HashSet<>();
+        String res = "";
+        for (List<String> list : paths) {
+            set.add(list.get(0));
+        }
+        for (List<String> list : paths) {
+            if (set.add(list.get(1))) {
+                res = list.get(1);
+            }
+        }
+        return res;
+    }
+
 
 
     public static void main(String[] args) {
@@ -113,8 +131,8 @@ public class test {
 //        System.out.println(t1.findSubIncreaseArray(new int[]{1, 2, 3, 1, 5, 7, 8, 9}));
 //        System.out.println(t1.findSubIncreaseArray(new int[]{1, 2, 3, 4, 5, 6, 7}));
 //        System.out.println(t1.compareTwoString("aabc", "abaabc"));
-        System.out.println(Arrays.toString(t1.nextGreaterElement(new int[]{2,4}, new int[]{1,
-                2,3,4})));
+//        System.out.println(Arrays.toString(t1.nextGreaterElement(new int[]{2,4}, new int[]{1,
+//                2,3,4})));
     }
 
 
