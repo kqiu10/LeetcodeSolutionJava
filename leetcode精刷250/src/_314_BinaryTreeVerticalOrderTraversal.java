@@ -65,6 +65,7 @@ import java.util.Queue;
  */
 public class _314_BinaryTreeVerticalOrderTraversal {
     int min = 0;
+
     int max = 0;
     public List<List<Integer>> verticalOrder(TreeNode root) {
 
