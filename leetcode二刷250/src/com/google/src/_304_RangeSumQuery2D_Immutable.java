@@ -31,23 +31,24 @@ package com.google.src;
  */
 
 /**
- * Time Complexity: O(n * m)
+ * Time Complexity: O(1)
  * Space Complexity: O(1)
  */
 public class _304_RangeSumQuery2D_Immutable {
-    int[][] matrix;
+    int[][] sum;
 
     public _304_RangeSumQuery2D_Immutable(int[][] matrix) {
-        this.matrix = matrix;
+        int m = matrix.length;
+        int n = matrix[0].length;
+        sum = new int[m + 1][n + 1];
+        for (int i = 1; i <= m; i++) {
+            for (int j = 1; j <= n; j++) {
+                sum[i][j] = sum[i - 1][j] + sum[i][j - 1] - sum[i - 1][j - 1] + matrix[i - 1][j - 1];
+            }
+        }
     }
 
     public int sumRegion(int row1, int col1, int row2, int col2) {
-        int res = 0;
-        for (int i = row1; i <= row2; i++) {
-            for (int j = col1; j <= col2; j++) {
-                res += matrix[i][j];
-            }
-        }
-        return res;
+        return sum[row2 + 1][col2 + 1] - sum[row2  +1][col1] - sum[row1][col2 + 1] + sum[row1][col1];
     }
 }
