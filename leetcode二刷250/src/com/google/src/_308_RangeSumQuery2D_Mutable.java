@@ -33,28 +33,47 @@ package com.google.src;
  */
 
 /**
- * Time Complexity: O()
- * Space Complexity: O()
+ * Time Complexity: O(logn)
+ * Space Complexity: O(n)
  */
 public class _308_RangeSumQuery2D_Mutable {
-
-    int[][] matrix;
-
+    int[][] tree;
+    int[][] nums;
+    int m;
+    int n;
     public _308_RangeSumQuery2D_Mutable(int[][] matrix) {
-        this.matrix = matrix;
+        m = matrix.length;
+        n = matrix[0].length;
+        tree = new int[m + 1][n + 1];
+        nums = new int[m][n];
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                update(i, j, matrix[i][j]);
+            }
+        }
     }
 
 
     public void update(int row, int col, int val) {
-        matrix[row][col] = val;
-
+        if (m == 0 || n == 0) return;
+        int diff = val - nums[row][col];
+        nums[row][col] = val;
+        for (int i = row + 1; i <= m; i += (i & (-i))) {
+            for (int j = col + 1; j <= n; j += (j & (-j))) {
+                tree[i][j] += diff;
+            }
+        }
     }
 
     public int sumRegion(int row1, int col1, int row2, int col2) {
+        return sum(row2 + 1, col2 + 1) + sum(row1, col1) - sum(row1, col2 + 1) - sum(row2 + 1, col1);
+    }
+
+    private int sum(int row, int col) {
         int res = 0;
-        for (int i = row1; i <= row2; i++) {
-            for (int j = col1; j <= col2; j++) {
-                res += matrix[i][j];
+        for (int k = row; k > 0; k -= ((k & -k))) {
+            for (int l = col; l > 0; l -= ((l & -l))) {
+                res += tree[k][l];
             }
         }
         return res;
