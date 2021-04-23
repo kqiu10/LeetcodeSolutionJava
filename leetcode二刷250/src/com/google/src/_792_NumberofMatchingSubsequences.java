@@ -23,9 +23,35 @@ package com.google.src;
  * Output: 2
  */
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.TreeMap;
+
 /**
  * Time Complexity: O()
  * Space Complexity: O()
  */
 public class _792_NumberofMatchingSubsequences {
+    public int numMatchingSubseq(String s, String[] words) {
+        TreeMap<Character, List<Integer>> map = new TreeMap<>();
+        for (int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            if (!map.containsKey(c)) {
+                map.put(c, new ArrayList<>());
+            }
+            List<Integer> list = map.get(c);
+            list.add(i);
+            map.put(c, list);
+        }
+        return 0;
+    }
+
+    public static void main(String[] args) {
+
+        _792_NumberofMatchingSubsequences test = new _792_NumberofMatchingSubsequences();
+        test.numMatchingSubseq("abcde", new String[]{"a", "bb", "acd", "ace"});
+    }
+
+
+
 }
