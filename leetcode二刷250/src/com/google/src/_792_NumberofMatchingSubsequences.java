@@ -39,6 +39,7 @@ public class _792_NumberofMatchingSubsequences {
             if (!map.containsKey(c)) {
                 map.put(c, new ArrayList<>());
             }
+
             List<Integer> list = map.get(c);
             list.add(i);
             map.put(c, list);
