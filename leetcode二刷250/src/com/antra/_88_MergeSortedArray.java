@@ -14,6 +14,7 @@ public class _88_MergeSortedArray {
     public void merge(int[] nums1, int m, int[] nums2, int n) {
         int e1 = m - 1;
         int e2 = n - 1;
+
         int end = m + n - 1;
         while (e1 >= 0 || e2 >= 0) {
             while (e1 >= 0 && e2 >= 0) {
