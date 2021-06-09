@@ -18,7 +18,6 @@ public class _88_MergeSortedArray {
         while (e1 >= 0 || e2 >= 0) {
             while (e1 >= 0 && e2 >= 0) {
                 nums1[end--] = nums1[e1] > nums2[e2] ? nums1[e1--] : nums2[e2--];
-
             }
             if (e1 >= 0) {
                 nums1[end--] = nums1[e1--];
@@ -26,7 +25,6 @@ public class _88_MergeSortedArray {
             if (e2 >= 0) {
                 nums1[end--] = nums2[e2--];
             }
-
         }
     }
 }
