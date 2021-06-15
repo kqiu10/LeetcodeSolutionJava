@@ -16,8 +16,7 @@ public class _88_MergeSortedArray {
         int e2 = n - 1;
         int end = m + n - 1;
         while (e1 >= 0 || e2 >= 0) {
-            while (e1 >= 0 && e2 >= 0) {
-
+            while (e1 >= 0 && e2 >= 0)
                 nums1[end--] = nums1[e1] > nums2[e2] ? nums1[e1--] : nums2[e2--];
             }
             if (e1 >= 0) {
